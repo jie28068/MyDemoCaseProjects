@@ -1,2 +1,0 @@
-E:\粤嵌\VS代码\贪吃蛇MVC\Debug\贪吃蛇MVC.exe
-E:\粤嵌\VS代码\贪吃蛇MVC\Debug\贪吃蛇MVC.pdb

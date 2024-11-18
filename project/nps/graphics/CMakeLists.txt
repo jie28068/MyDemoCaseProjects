@@ -1,0 +1,16 @@
+﻿set(GROUP_NAME "Graphics")
+
+safe_add_subdirectory(GraphicsModelingKernel)
+safe_add_subdirectory(PluginComponentView)
+
+# safe_add_subdirectory(PluginDrawingBoardHelper)
+safe_add_subdirectory(PluginGraphicsModelingServer)
+safe_add_subdirectory(PluginPropertyManagerServer)
+safe_add_subdirectory(PluginControlSystemGraphics)
+safe_add_subdirectory(PluginElectricalSystemGraphics)
+safe_add_subdirectory(PluginStateMachineGraphics)
+safe_add_subdirectory(PluginModuleWizard)
+
+if(OP_ENABLE_QT_WEBENGINE)
+    safe_add_subdirectory(PluginGISView)
+endif()

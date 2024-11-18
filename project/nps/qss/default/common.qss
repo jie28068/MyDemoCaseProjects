@@ -1,0 +1,612 @@
+/*the separator area of the mainwindow*/
+TraditionMainwindow::separator {
+    background: #e7eef6;
+    width: 8px; /* when vertical */
+    height: 0px; /* when horizontal */
+	margin:1px;
+}
+TraditionMainwindow[CoreUIMaxWindow=true] {
+	background: #e7eef6;
+	border:1px solid #b7cade;
+}
+TraditionMainwindow[CoreUIMaxWindow=false] {
+	background: #e7eef6;
+	border:none;
+}
+
+.QPushButton#LineMinMax {
+	background-color : transparent;
+	border-left: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #002E51, stop: 1 #003d74);
+	border-right: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005A9E, stop: 1 #003d74);
+}
+
+.QPushButton#LineMaxClose {
+	background-color : transparent;
+	border-left: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #002E51, stop: 1 #003d74);
+	border-right: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005A9E, stop: 1 #003d74);
+} 
+
+.QPushButton#SplitBtn{
+	background-color: #004D87
+}
+/*tableWidget and tableView grid color*/
+ * { gridline-color: #bfbfbf;}
+ 
+ * {
+ font-size:14px;
+ font-family:"Microsoft YaHei";
+ }
+ 
+QProgressBar#MainUIProgress{
+	border: none;
+	text-align: center;
+}
+QProgressBar#MainUIProgress::chunk{
+	background: #2C9AD4;
+}
+
+/*QMenu*/
+.QMenu {
+    background-color: #ffffff;
+	color:#35405c;
+	font-size:14px;
+	border:1px solid #A3A3A3;	
+	qproperty-windowFlags: FramelessWindowHint;
+}
+.QMenu::item{
+	padding-left: 10px;
+	padding-right: 18px;
+	margin: 3px 2px 3px 0px;
+	color:#35405C;
+}
+.QMenu::item:selected {
+    background: #d1e0ef;
+	background-clip:margin;
+	color:#036EB7;
+}
+.QMenu::item:disabled {
+    color: #c9c9c9;
+	font-color:#BFBFBF;
+}
+.QMenu::right-arrow{
+	image: url(:/CoreUi/Resources/default/common/menu-rightArrow.png);
+}
+
+.QMenu::separator {
+	height:1px;
+    background-color: #B7CADE;     
+    margin-left: 10px;             
+    margin-right: 10px;            
+}
+
+.QMenu[isHideIcon=true]::item{
+	margin: 3px 0px 3px 0px;
+	padding-left: 0px;
+	min-width: 80px;
+}
+
+TraditionMenuBar{
+	background-color: #003D74;	
+	height:30px;
+	margin:1px;
+} 
+MenuBar#Tradition_MenuBar{
+	spacing: 10px;
+	background-color: #003D74;	
+} 
+MenuBar#Tradition_MenuBar::item {
+	spacing:0px;
+	height:26;
+	margin: 5px 0px 5px 0px;
+    padding: 2px 8px 2px 8px; 
+	color:white;
+	background:transparent;
+}
+MenuBar#Tradition_MenuBar::item:selected { /* when selected using mouse or keyboard */
+	background: #195AA7;
+}
+MenuBar#Tradition_MenuBar::item:pressed {
+	background: #195AA7;
+} 
+MenuBar#Tradition_MenuBar::item:hover {
+	background: #084683;
+} 
+
+/*QStatusBar*/
+QStatusBar{
+	background: #dbe3e9;
+	height:24px;
+}
+
+/*QPushButton*/
+.QPushButton{
+	color:#FFFFFF;
+	font-size:12px;
+	background-color:#036EB7;
+	border-radius:0px;
+	width:40px;
+	height:25px;
+}
+.QPushButton:hover{
+	background:#025696;
+} 
+.QPushButton:pressed{
+	background:#003D74;
+}
+.QPushButton:disabled{
+	background:#CACACA;
+}
+
+/*QSpinBox*/
+QSpinBox{
+
+}
+
+/*QLabel*/
+QLabel{
+	font-size:14px;
+	color:#35405C;
+}
+QLabel:disabled{	
+	color:#BCBCBC;
+}
+
+/*the edit and show Area*/
+QTextEdit,QPlainTextEdit{
+	font-size:14px;
+	color:#333333;
+	border:1px solid #bfbfbf;
+	/*padding-left: 10px;*/
+	line-height: 200%;
+}
+
+/*QCheckBox*/
+QCheckBox::indicator{
+	width:20px;
+	height:20px;
+	background:transparent;
+}
+
+QCheckBox::indicator:enabled:checked{
+	image:url(:/checkbox/Resources/CheckBox_checked.png);
+} 
+
+QCheckBox::indicator:enabled:unchecked{
+	image:url(:/checkbox/Resources/CheckBox_unchecked.png);
+} 
+
+QCheckBox::indicator:enabled:indeterminate{
+	image:url(:/checkbox/Resources/CheckBox_partiallyChecked.png);
+} 
+
+QCheckBox::indicator:!enabled:checked{
+	image:url(:/checkbox/Resources/CheckBox_checked_disable.png);
+} 
+
+QCheckBox::indicator:!enabled:unchecked{
+	image:url(:/checkbox/Resources/CheckBox_unchecked_disable.png);
+} 
+
+QCheckBox::indicator:!enabled:indeterminate{
+	image:url(:/checkbox/Resources/CheckBox_partiallyChecked_disable.png);
+} 
+
+QListView{
+	font-size:14px;
+	border:1px solid #bfbfbf;
+}
+
+/*CustomDockWidget QTabBar (float panel tabBar)*/
+QTabBar[CoreMainUITabBar=true]{
+	background:#d1e0ef;
+	/* background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:1 #e2e9f2);	 */
+	border-top: 1px solid #b7cade;
+	border-right: 1px solid #b7cade;
+	border-bottom: 1px solid #b7cade;
+	border-left: 1px solid #b7cade;
+}
+QTabBar[CoreMainUITabBar=true]::separator{
+	height:25px;
+}
+QTabBar[CoreMainUITabBar=true]::tear{
+	width: 10px;
+	border: none;
+}
+QTabBar[CoreMainUITabBar=true]::tab{
+	min-width: 60px;
+	min-height: 25px;
+	color: #35405c;
+	font-size:14px;
+	border-radius:0px;
+	background: transparent;
+	margin:6px;
+	/* margin-top:15px;
+	margin-bottom:6px;
+	margin-right:2px;
+	margin-left:15px;	 */
+}
+QTabBar[CoreMainUITabBar=true]::tab:selected{
+	color: #003d74;
+	font-weight:bold;
+	/* background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #b7cade, stop:1 #D8DFE7); */
+}
+QTabBar[CoreMainUITabBar=true]::tab:hover{
+	/* background: rgb(233,240,240); */
+}
+
+QTabBar[CoreMainUITabBar=true][shape="0"]{
+	background-color: #d1e0ef;
+	border: 1px solid #b7cade;
+	border-bottom-width: 0px;
+}
+
+QTabBar[CoreMainUITabBar=true][shape="0"]::tab{
+	min-width: 10px;
+	min-height:24px;
+	color: #35405c;
+	font-size:14px;
+	background: transparent;
+	border-radius:0px;
+	margin:1px;
+	padding-left:10px;
+	padding-right:10px;
+}
+QTabBar[CoreMainUITabBar=true][shape="0"]::tab:selected{
+	color: #003D74;
+}
+QTabBar[CoreMainUITabBar=true][shape="0"]::tab:hover{
+
+}
+
+/*float panel titleabr*/
+DockTitleBar{
+	font-size:14px;
+	color:#003D74;
+	font-weight:bold;	
+	background-color: #d1e0ef;
+	padding-left:15px;
+	border-top:1px solid #b7cade;
+	border-left:1px solid #b7cade;
+	border-right:1px solid #b7cade;
+}
+DockTitleBar QLabel{
+	font-size:14px;
+	color:#003D74;
+	font-weight:bold;	
+	padding-left:5px;
+}
+
+/*Qmainwidnow WorkTabWidget(work area)*/
+WorkTabWidget{
+	background-color: #e7eef6;
+	margin-right: 1px solid #b7cade;
+}
+
+WorkTabWidget::pane {
+    border:1px solid #b7cade;
+	margin:0 1 1 1;
+    position: absolute;
+    top: -1px;
+}
+
+WorkTabWidget QTabBar#workAreaTabBar{
+	background: #e7eef6;
+	border: none;
+	color:#595757;
+	font-size:14px;	
+	border-bottom:1px solid #b7cade;
+}
+
+WorkTabWidget QTabBar#workAreaTabBar::tab { 
+	height:25px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-right:2px;
+	margin-bottom:-1px;
+	background: #e7eef6;
+	border:1px solid #B7CADE;
+	border-bottom:1px solid #b7cade;
+	/* border-image: url(:/CoreUi/Resources/default/common/workArea/mainTab.png); */
+}
+WorkTabWidget QTabBar#workAreaTabBar::tab:last { 
+	margin-right:0px;
+}
+
+WorkTabWidget QTabBar#workAreaTabBar::tab:selected{ 
+	color:#036EAB;
+	background:white;
+	border-top:3px solid #003d74;
+	border-bottom:white;
+	/* border-image: url(:/CoreUi/Resources/default/common/workArea/mainTab-selected.png); */
+}
+WorkTabWidget QTabBar#workAreaTabBar::tab:!selected:hover{
+	color:#35405c;
+	background:white;
+	/* border-image: url(:/CoreUi/Resources/default/common/workArea/mainTab-hover.png); */
+}
+WorkTabWidget QTabBar#workAreaTabBar::tab:!selected{
+	color:grey;
+}
+
+WorkTabWidget QTabBar#workAreaTabBar::close-button{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close.png);
+}
+WorkTabWidget QTabBar#workAreaTabBar::close-button:hover{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close-hover.png);
+}
+WorkTabWidget QTabBar#workAreaTabBar::close-button:pressed{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close-press.png);
+}
+WorkTabWidget QTabBar#workAreaTabBar::scroller{
+	width: 0;
+}
+WorkTabWidget QTabBar#workAreaTabBar QWidget{
+	background-color: none;	
+}
+
+/*float panel parent*/
+WorkTabWidget QToolButton#CommonTools_recentProjs,QToolButton#CommonTools_back,QToolButton#CommonTools_front{
+	border-radius:2px;
+}
+
+QToolButton#CommonTools_recentProjs{/*工作区最近打开项目列表*/
+	color:rgb(3,110,171);
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/workArea/recentOpenProjs.png);
+}
+QToolButton#CommonTools_recentProjs:hover{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/recentOpenProjs-hover.png);
+}
+QToolButton#CommonTools_recentProjs:press{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/recentOpenProjs-press.png);
+}
+QToolButton#CommonTools_recentProjs:disabled{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/recentOpenProjs-disabled.png);
+}
+
+QToolButton#CommonTools_back{	/*工作区tab页向后切换按钮*/
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left.png);
+}
+QToolButton#CommonTools_back::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-press.png);
+}
+QToolButton#CommonTools_back::hover{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-hover.png);
+}
+QToolButton#CommonTools_back::disabled{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-disabled.png);
+}
+
+QToolButton#CommonTools_front{/*工作区tab页向前切换按钮*/
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right.png);
+}
+QToolButton#CommonTools_front::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-press.png);
+}
+QToolButton#CommonTools_front::hover{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-hover.png);
+}
+QToolButton#CommonTools_front::disabled{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-disabled.png);
+}
+
+/*close maxminized minimized button*/
+DockTitleBarBtn#close{
+	background-color: transparent;
+	background: url(:/CoreUi/Resources/default/common/module/close.png);
+	border:none;
+}
+DockTitleBarBtn#close:hover {	
+	background: url(:/CoreUi/Resources/default/common/module/close-hover.png);
+}
+DockTitleBarBtn#close:pressed {
+	background: url(:/CoreUi/Resources/default/common/module/close-press.png);
+}
+DockTitleBarBtn#close:focus{
+	outline: none;
+}
+
+DockTitleBarBtn#maxmimized{
+	background-color: transparent;
+	background: url(:/CoreUi/Resources/default/common/module/max.png);
+	border:none;
+}
+DockTitleBarBtn#maxmimized:hover {
+	background: url(:/CoreUi/Resources/default/common/module/max-hover.png);
+}
+DockTitleBarBtn#maxmimized:pressed {
+	background: url(:/CoreUi/Resources/default/common/module/max-press.png);
+}
+DockTitleBarBtn#maxmimized:focus{
+	outline: none;
+}
+
+DockTitleBarBtn#float{
+	background-color: transparent;
+	background: url(:/CoreUi/Resources/default/common/module/restore.png);
+	border:none;
+}
+DockTitleBarBtn#float:hover {
+	background: url(:/CoreUi/Resources/default/common/module/restore-hover.png);
+}
+DockTitleBarBtn#float:pressed {
+	background: url(:/CoreUi/Resources/default/common/module/restore-press.png);
+}
+DockTitleBarBtn#float:focus{
+	outline: none;
+}
+
+/*every float widget's parent*/
+CustomDockWidget PluginContainerWidget{
+	border:1px solid #b7cade;
+	background:#ffffff;
+}
+
+CommonToolBar::separator{
+	width: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+CommonToolBar{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:1 #e2e9f2);
+	border-bottom: 1px solid #b7cade;
+	min-height:30px;
+	margin:0 1 0 1;
+}
+CommonToolBar QToolButton{
+	width:21px;
+	height:21px;
+	border-radius:2px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.QToolBar{
+	background:#ffffff;
+}
+
+/*状态栏*/
+CommonStatusBar[CoreUIMaxWindow=true]{
+	margin:1px;
+}
+
+QToolButton#ButtonGroupCloseButton{	
+	background-color: transparent; 
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url(:/CoreUi/Resources/default/common/close.png);
+}
+QToolButton#ButtonGroupCloseButton::pressed{
+	background-image: url(:/CoreUi/Resources/default/common/close-press.png);
+}
+QToolButton#ButtonGroupCloseButton::hover{
+	background-image: url(:/CoreUi/Resources/default/common/close-hover.png);
+}
+
+QToolButton#ButtonGroupMiniButton{
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/mini.png);
+}
+QToolButton#ButtonGroupMiniButton::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/mini-press.png);
+}
+QToolButton#ButtonGroupMiniButton::hover{
+	background-image:url(:/CoreUi/Resources/default/common/mini-hover.png);
+}
+
+QToolButton[CoreUIMaxWindow=true]{
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/max.png);	
+}
+QToolButton[CoreUIMaxWindow=true]::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/max-press.png);
+}
+QToolButton[CoreUIMaxWindow=true]::hover{
+	background-image:url(:/CoreUi/Resources/default/common/max-hover.png);
+}
+
+QToolButton[CoreUIMaxWindow=false]{
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/restore.png);	
+}
+QToolButton[CoreUIMaxWindow=false]::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/restore-press.png);
+}
+QToolButton[CoreUIMaxWindow=false]::hover{
+	background-image:url(:/CoreUi/Resources/default/common/restore-hover.png);
+}
+
+
+QToolButton#CommonTools_back{	
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left.png);
+}
+QToolButton#CommonTools_back::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-press.png);
+}
+QToolButton#CommonTools_back::hover{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-hover.png);
+}
+QToolButton#CommonTools_back::disabled{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/left-disabled.png);
+}
+
+QToolButton#CommonTools_front{
+	background-color: transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right.png);
+}
+QToolButton#CommonTools_front::pressed{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-press.png);
+}
+QToolButton#CommonTools_front::hover{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-hover.png);
+}
+QToolButton#CommonTools_front::disabled{
+	background-image:url(:/CoreUi/Resources/default/common/workArea/right-disabled.png);
+}
+
+
+/*workArea addbutton*/
+WorkTabWidget QToolButton#WorkAreaAddBtn{
+	color:#036EAB;
+	font-size:25px;
+	background: transparent;
+	min-width: 30px;
+	max-width: 30px;
+	min-height: 30px;
+	max-height: 30px;
+}
+/*workarea top leftcorner widget*/
+WorkTabWidget QWidget#ToolBtnsContainerWidget{
+	background:transparent;
+	border-left: 1px solid #b7cade;
+	min-height:30px;
+	min-width:30px;
+}
+
+QLabel#applicationNameLbe{
+	color:white;
+}
+
+QStatusBar QLabel#statusLabel{
+	font-family: "Microsoft YaHei";
+	font:12px;
+	color:#717071;
+	background:#ffffff;
+	border-top:1px solid #b7cade;
+}
+
+QStatusBar{
+	background: transparent;
+}
+
+QToolTip {
+	border: 1px solid #a3a3a3;
+	background: #ffffff;
+	color: #333333;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 6px;
+}
+
+QGridLayout>layout-item-row {
+	margin-bottom: 8px;
+}

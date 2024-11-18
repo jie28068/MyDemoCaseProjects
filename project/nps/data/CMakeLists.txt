@@ -1,0 +1,8 @@
+set(GROUP_NAME "Data")
+
+safe_add_subdirectory(PluginMonitorPanelManagerView)
+safe_add_subdirectory(PluginSimuNPSAdapter)
+safe_add_subdirectory(PluginProjectManagerServer)
+safe_add_subdirectory(PluginModelManager)
+safe_add_subdirectory(PluginProjectManagerView)
+safe_add_subdirectory(PluginSimuLabServer)

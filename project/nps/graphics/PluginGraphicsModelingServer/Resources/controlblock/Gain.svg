@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Gain</title>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gain" transform="translate(0.000000, 0.000000)" fill-rule="nonzero">
+            <g id="编组">
+                <g>
+                    <polygon id="路径" fill="#FFFFFF" points="0.3 0.5 39.3 20 0.3 39.5"></polygon>
+                    <path d="M38.6,20 L0.6,39 L0.6,1 L38.6,20 Z M0,40 L40,20 L0,0 L0,40 Z" id="形状" fill="#003756"></path>
+                </g>
+                <polygon id="路径_1_" fill="#FFFFFF" points="37.4 20 1.4 37.6 1.4 2.4"></polygon>
+            </g>
+            <polygon id="路径_2_" fill="#35405C" points="12.5 22.6 12.5 17.1 13.2 17.1 13.2 20.2 14.8 18.6 15.6 18.6 14.1 20.1 15.8 22.6 15 22.6 13.7 20.5 13.2 21 13.2 22.6"></polygon>
+        </g>
+    </g>
+</svg>

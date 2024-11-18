@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/PluginModelManager">
+          <file alias="composition">Resources/composition.png</file>
+          <file>Resources/composition_disable.png</file>
+          <file>Resources/composition_prototype.png</file>
+          <file>Resources/composition_prototype_1.png</file>
+          <file alias="group">Resources/group.png</file>
+          <file>Resources/group_disable.png</file>
+          <file>Resources/group_prototype.png</file>
+          <file>Resources/group_prototype_1.png</file>
+          <file alias="module">Resources/module.png</file>
+          <file>Resources/module_disable.png</file>
+          <file>Resources/module_prototype.png</file>
+          <file>Resources/module_prototype_1.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,107 @@
+AddNewModelDialog QGroupBox{
+	font-family:"Microsoft YaHei";
+	font-size:14px;
+	color:#005A9E;
+	font-weight:bold;
+}
+
+AddNewModelDialog{
+	background:white;
+}
+
+ImportExistSimulinkModelDialog{
+	background:white;
+}
+
+NewSimuLabProjectDilaog{
+	background:white;
+
+}
+
+SwitchWorkShopDialog{
+	background:white;
+}
+
+ImportProjectWidget{
+	background:white;
+}
+
+NewPanelDialog{
+	background:white;
+}
+
+CustomLineEdit {
+	max-height: 25px;
+}
+
+QWidget#widgetTable,QWidget#widgetTree{
+	border: 1px solid #bfbfbf;
+}
+
+QWidget#widgetTree QTreeView {
+	border: 0px;
+}
+
+QWidget#DemoProjectView TreeView {
+	outline: none;
+	show-decoration-selected: 1;
+	margin-left: 0px;
+}
+
+QWidget#DemoProjectView TreeView::branch:has-children, QWidget#DemoProjectView TreeView::item:has-children{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #EDF2F7;
+	border-bottom:1px solid #CFCFCF;
+	border-top:1px solid #CFCFCF;
+}
+
+QWidget#DemoProjectView TreeView::branch:!has-children{
+	min-width: none;
+}
+
+QWidget#DemoProjectView TreeView::item{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height:25px;
+}
+
+QWidget#DemoProjectView TreeView::branch:has-children:hover, QWidget#DemoProjectView TreeView::item:hover {
+	background-color: #CAE0F1;
+}
+QWidget#DemoProjectView TreeView::branch:has-children:selected, QWidget#DemoProjectView TreeView::item:selected {
+	color:#036EB4;
+	background-color: #CAE0F1;
+    border: none;
+}
+
+
+QWidget#DemoProjectView TreeView::branch:closed:has-children:has-siblings,
+QWidget#DemoProjectView TreeView::branch:closed:has-children:!has-siblings {
+	border-image: none;
+	image:url(:/PluginProjectManagerView/resource/SampleProjectIcons/close_normal.png);
+}
+
+QWidget#DemoProjectView TreeView::branch:open:has-children:has-siblings,
+QWidget#DemoProjectView TreeView::branch:open:has-children:!has-siblings {
+	border-image: none;
+	image:url(:/PluginProjectManagerView/resource/SampleProjectIcons/expand_normal.png);
+}
+
+QSplitter::handle {
+	background-color: #FBFCFF;
+}
+
+QPushButton#projSortBtn:disabled{
+	image:url(:/PluginProjectManagerView/resource/ActionsIcon/sort-disable.png);
+}
+
+QPushButton#projSortBtn::menu-indicator 
+{
+	image:none;
+}
+
+QPushButton#projSortBtn{
+    background-color: white;
+    image:url(:/PluginProjectManagerView/resource/ActionsIcon/sort-normal.png);
+}

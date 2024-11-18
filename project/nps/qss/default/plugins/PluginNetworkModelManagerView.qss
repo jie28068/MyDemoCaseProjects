@@ -1,0 +1,22 @@
+CustomMenu::item {
+	padding-left:2px;
+}
+
+CustomHeaderView{
+	font-size:14px;
+	min-height: 36px;
+}
+CustomTableView QHeaderView{
+	min-height: 36px;
+	min-width: 36px;
+}
+
+CustomHeaderView::section {
+	font-size:14px;
+	color:#000000;
+    background-color:#ececec; 
+	border-top:none;
+	border-left:none;
+	border-right: 1px solid #f9f9f9;
+	border-bottom: none;
+}

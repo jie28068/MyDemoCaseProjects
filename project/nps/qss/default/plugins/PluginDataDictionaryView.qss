@@ -1,0 +1,73 @@
+
+VariableTableMonitor{
+	background:white;
+}
+
+VariableTableMonitor QToolButton#discardChangedButton{
+	border-image: url(:/nVariable/Resources/Images/variable icon/DiscardChanged.png);
+}
+VariableTableMonitor QToolButton#discardChangedButton:hover{
+	border-image: url(:/nVariable/Resources/Images/variable icon/DiscardChanged-hover.png);
+}
+VariableTableMonitor QToolButton#discardChangedButton:pressed{
+	border-image: url(:/nVariable/Resources/Images/variable icon/DiscardChanged-press.png);
+}
+VariableTableMonitor QToolButton#discardChangedButton:disabled{
+	border-image: url(:/nVariable/Resources/Images/variable icon/DiscardChanged-disabled.png);
+}
+
+
+VariableTableMonitor QToolButton#applyChangedButton{
+	border-image: url(:/nVariable/Resources/Images/variable icon/ApplyChanged.png);
+}
+VariableTableMonitor QToolButton#applyChangedButton:hover{
+	border-image: url(:/nVariable/Resources/Images/variable icon/ApplyChanged-hover.png);
+}
+VariableTableMonitor QToolButton#applyChangedButton:pressed{
+	border-image: url(:/nVariable/Resources/Images/variable icon/ApplyChanged-press.png);
+}
+VariableTableMonitor QToolButton#applyChangedButton:disabled{
+	border-image: url(:/nVariable/Resources/Images/variable icon/ApplyChanged-disabled.png);
+}
+
+VariableTableMonitor QToolButton#ImmediatelyApplyButton:!checked{
+	border-image: url(:/nVariable/Resources/Images/variable icon/Immediately.png);
+}
+VariableTableMonitor QToolButton#ImmediatelyApplyButton:!checked:hover{
+	border-image: url(:/nVariable/Resources/Images/variable icon/Immediately-hover.png);
+}
+VariableTableMonitor QToolButton#ImmediatelyApplyButton:!checked:pressed{
+	border-image: url(:/nVariable/Resources/Images/variable icon/Immediately-press.png);
+}
+VariableTableMonitor QToolButton#ImmediatelyApplyButton:!checked:disabled{
+	border-image: url(:/nVariable/Resources/Images/variable icon/Immediately-disabled.png);
+}
+
+VariableTableMonitor QToolButton#ImmediatelyApplyButton:checked{
+	border-image: url(:/nVariable/Resources/Images/variable icon/Immediately-press.png);
+}
+
+VariableTableMonitor QTableView{
+	color:#717071;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	border: 1px solid #c5c5c5;
+}
+
+VariableTableMonitor QTableView::item{
+	selection-background-color:rgb(217,217,217);
+	selection-color: rgb(0,0,0);
+}
+VariableTableMonitor QTableView QHeaderView{
+	min-height: 30px;
+}
+VariableTableMonitor QTableView QHeaderView::section {
+	font-family:"Microsoft YaHei";
+	font-size:14px;
+	color:#000000;
+    background-color:#e2e2e3; 
+	border-top:none;
+	border-left:none;
+	border-right: 1px solid #c5c5c5;
+	border-bottom: none;
+}

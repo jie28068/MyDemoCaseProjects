@@ -1,0 +1,48 @@
+ConfigPage{
+	background:#ffffff;
+}
+ConfigPage QGroupBox {
+	color:#036eab;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+}
+ConfigPage QGroupBox::title {
+    subcontrol-origin: margin;   
+    subcontrol-position: top left; /* position at the top top left */	
+}
+ConfigPage #stackedWidget{
+	border:1px solid #bfbfbf;
+	background:#ffffff;
+}
+ConfigPage #ConfigListWidget{
+	outline: none;
+	border:1px solid #bfbfbf;
+	color:#333333;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	background:#ffffff;
+	padding-left:0px;
+}
+ConfigPage #ConfigListWidget::item {
+	padding-left:5px;
+	color:#333333;
+	background-color: #ffffff;
+}
+ConfigPage #ConfigListWidget::item:selected {
+	color:#036eab;
+}
+ConfigPage #ConfigListWidget::item:hover {
+	background-color: #d1e0ef;
+}
+
+.GeneralConfigView #generaLabel{
+	border-bottom:1px solid #003d74;
+	font-weight:bold;
+	font-size:14px;
+	background:transparent;
+	color:#003d74;
+}
+.GeneralConfigView #ipLine{
+	color:#E1E8EF;
+}

@@ -1,0 +1,124 @@
+MyToolBox QWidget {
+	background-color: rgb(251, 252, 255);
+}
+
+MyToolBox QLineEdit {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+MyToolBox QLineEdit {
+	border: 1px solid #BFBFBF;
+	color: #BFBFBF;
+}
+
+MyToolBox QLineEdit:hover {
+	border: 1px solid #BFBFBF;
+	color: #333333;
+}
+
+MyToolBox QLineEdit:focus {
+	border: 1px solid #2CA6E0;
+	color: #333333;
+}
+
+ToolPage QWidget {
+	background-color: #FFFFFF;
+}
+
+
+/* list*/
+MyListView {
+	border-top: none;
+	border-width: 1px;
+	border-color: #CECECE;
+}
+
+MyListView {
+	padding-top: 4px;
+}
+
+/* search line*/
+
+SearchLineEdit QPushButton#iconButton {
+	border: none;
+	background-color: transparent;
+	border-image: url(:/PluginComponentView/fangda);
+	width: 16px;
+	height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+SearchLineEdit QPushButton#clearButton {
+	border: none;
+	background-color: #B7CADE;
+	background-image: url(:/PluginComponentView/close);
+	width: 16px;
+	height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+SearchLineEdit QPushButton#clearButton:hover {
+	background-color: #D1E0EF;
+}
+
+SearchLineEdit QPushButton#clearButton:pressed {
+	background-color: #7E9CBA;
+}
+
+/* search line*/
+SearchLineEdit {
+border:1px solid #CECECE;
+}
+
+SearchLineEdit QPushButton#iconButton{
+border:none;
+background-color:transparent;
+border-image:url(:/PluginComponentView/fangda);
+width:16px;
+height:16px;
+margin: 0px 0px 0px 0px;
+}
+
+/*QMenu*/
+QMenu#uniformStyleMenu_cV {
+    background-color: #ffffff;
+	color:#3e3a39;
+	font-size:14px;
+	border:1px solid  #A3A3A3;
+}
+QMenu::item#uniformStyleMenu_cV{
+	padding-left: 10px;
+	padding-right: 18px;
+	margin: 3px 2px 3px 0px;
+	color:#35405C;
+}
+QMenu::item:selected#uniformStyleMenu_cV {
+    background: #D1E0EF;
+	background-clip:margin;
+	color:#036EB7;
+}
+QMenu::item:disabled#uniformStyleMenu_cV {
+    color: #D4D4D4;
+	color:#BFBFBF;
+}
+QMenu::right-arrow#uniformStyleMenu_cV{
+	image:url(:/CoreUi/Resources/default/common/menu-rightArrow.png);
+}
+
+QMenu::separator#uniformStyleMenu_cV {
+	height:1px;
+    background-color: #B7CADE;     
+    margin-left: 10px;             
+    margin-right: 10px;            
+}
+QMenu[isHideIcon=true]::item#uniformStyleMenu_cV{
+	margin: 3px 10px 3px 0px;
+	padding-left: 0px;
+	min-width: 80px;
+}
+
+QWidget#widget{
+	background-color: rgb(251, 252, 255);
+}

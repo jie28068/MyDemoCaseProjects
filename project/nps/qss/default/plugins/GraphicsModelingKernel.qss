@@ -1,0 +1,435 @@
+
+QPushButton#bookmark:hover{
+	image:url(:/GraphicsModelingKernel/hbookmark);
+}
+
+QPushButton#bookmark:pressed{
+	image:url(:/GraphicsModelingKernel/cbookmark);
+}
+QPushButton#bookmark::menu-indicator 
+{
+	image:none;
+}
+
+QPushButton#bookmark{
+    background-color: white;
+    image:url(:/GraphicsModelingKernel/rbookmark);
+}
+
+CreateModelEdit QPushButton#iconButton{
+border:none;
+background-color:transparent;
+border-image:url(:/PluginComponentView/fangda);
+width:16px;
+height:16px;
+margin: 0px 2px 0px 0px;
+}
+
+CreateModelEdit QPushButton#clearButton{
+	border:none;
+	background-color:#B7CADE;
+	background-image:url(:/PluginComponentView/close);
+	width:16px;
+	height:16px;
+	margin: 0px 3px 0px 0px;
+}
+
+CreateModelEdit QPushButton#clearButton:hover{
+	background-color:#D1E0EF;
+}
+
+CreateModelEdit QPushButton#clearButton:pressed{
+	background-color:#7E9CBA;
+}
+
+QToolButton{
+	border-style: flat;
+	background: transparent;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+ViewToolBar QComboBox:disabled{
+	background-color: #E2E2E2;
+}
+
+ViewToolBar QComboBox:disabled{
+	background-color: #E2E2E2;
+}
+
+ViewToolBar QComboBox {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #CECECE;
+	border-color: #CECECE;
+}
+
+ViewToolBar QToolBar::separator{ 
+	background-color: #CECECE; 
+	width: 1px;
+	height: 20px;
+}
+
+QToolButton#Polygon{
+	background-image:url(:/GraphicsModelingKernel/nPolygon);
+}
+QToolButton#Polygon:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hPolygon);
+}
+QToolButton#Polygon:disabled{
+	background-image:url(:/GraphicsModelingKernel/dPolygon);
+}
+QToolButton#Polygon:checked{
+	background-image:url(:/GraphicsModelingKernel/cPolygon); 
+}
+
+QToolButton#LineArrow{
+	background-image:url(:/GraphicsModelingKernel/nLineArrow);
+}
+QToolButton#LineArrow:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hLineArrow);
+}
+QToolButton#LineArrow:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dLineArrow);
+}
+QToolButton#LineArrow:checked{
+	background-image:url(:/GraphicsModelingKernel/cLineArrow); 
+}
+
+
+QToolButton#Arrows{
+	background-image:url(:/GraphicsModelingKernel/nArrows);
+}
+QToolButton#Arrows:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hArrows);
+}
+QToolButton#Arrows:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dArrows);
+}
+QToolButton#Arrows:checked{
+	background-image:url(:/GraphicsModelingKernel/cArrows); 
+}
+
+QToolButton#BrokenLine{
+	background-image:url(:/GraphicsModelingKernel/nBrokenLine);
+}
+QToolButton#BrokenLine:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hBrokenLine);
+}
+QToolButton#BrokenLine:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dBrokenLine);
+}
+QToolButton#BrokenLine:checked{
+	background-image:url(:/GraphicsModelingKernel/cBrokenLine); 
+}
+
+QToolButton#Segment{
+	background-image:url(:/GraphicsModelingKernel/nSegment);
+}
+QToolButton#Segment:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hSegment);
+}
+QToolButton#Segment:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dSegment);
+}
+QToolButton#Segment:checked{
+	background-image:url(:/GraphicsModelingKernel/cSegment); 
+}
+
+QToolButton#Rectangle{
+	background-image:url(:/GraphicsModelingKernel/nRectangle);
+}
+QToolButton#Rectangle:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hRectangle);
+}
+QToolButton#Rectangle:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dRectangle);
+}
+QToolButton#Rectangle:checked{
+	background-image:url(:/GraphicsModelingKernel/cRectangle); 
+}
+
+QToolButton#Circular{
+	background-image:url(:/GraphicsModelingKernel/nCircular);
+}
+QToolButton#Circular:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hCircular);
+}
+QToolButton#Circular:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dCircular);
+}
+QToolButton#Circular:checked{
+	background-image:url(:/GraphicsModelingKernel/cCircular); 
+}
+
+QToolButton#Textbox{
+	background-image:url(:/GraphicsModelingKernel/nTextbox);
+}
+QToolButton#Textbox:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hTextbox);
+}
+QToolButton#Textbox:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dTextbox);
+}
+QToolButton#Textbox:checked{
+	background-image:url(:/GraphicsModelingKernel/cTextbox); 
+}
+
+QToolButton#Icon{
+	background-image:url(:/GraphicsModelingKernel/nIcon);
+}
+QToolButton#Icon:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hIcon);
+}
+QToolButton#Icon:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dIcon);
+}
+QToolButton#Icon:checked{
+	background-image:url(:/GraphicsModelingKernel/cIcon); 
+}
+
+QToolButton#PrintDrawBoard{
+	background-image:url(:/GraphicsModelingKernel/nPrint);
+}
+QToolButton#PrintDrawBoard:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hPrint);
+}
+QToolButton#PrintDrawBoard:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dPrint);
+}
+QToolButton#PrintDrawBoard:checked{
+	background-image:url(:/GraphicsModelingKernel/cPrint); 
+}
+
+QToolButton#SaveImage{
+	background-image:url(:/GraphicsModelingKernel/nSaveImage);
+}
+QToolButton#SaveImage:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hSaveImage);
+}
+QToolButton#SaveImage:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dSaveImage);
+}
+QToolButton#SaveImage:checked{
+	background-image:url(:/GraphicsModelingKernel/cSaveImage); 
+}
+
+
+QToolButton#FitIn{
+	background-image:url(:/GraphicsModelingKernel/nFitIn);
+}
+QToolButton#FitIn:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hFitIn);
+}
+QToolButton#FitIn:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dFitIn);
+}
+QToolButton#FitIn:checked{
+	background-image:url(:/GraphicsModelingKernel/cFitIn); 
+}
+
+
+QToolButton#ScreenDrag{
+	background-image:url(:/GraphicsModelingKernel/nScreenDrag);
+}
+QToolButton#ScreenDrag:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hScreenDrag);
+}
+QToolButton#ScreenDrag:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dScreenDrag);
+}
+QToolButton#ScreenDrag:checked{
+	background-image:url(:/GraphicsModelingKernel/cScreenDrag); 
+}
+
+
+QToolButton#Magnify_n{
+	background-image:url(:/GraphicsModelingKernel/nMagnify);
+}
+QToolButton#Magnify_n:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hMagnify);
+}
+QToolButton#Magnify_n:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dMagnify);
+}
+QToolButton#Magnify_n:checked{
+	background-image:url(:/GraphicsModelingKernel/cMagnify); 
+}
+
+QToolButton#Arc{
+	background-image:url(:/GraphicsModelingKernel/nArc);
+}
+QToolButton#Arc:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hArc);
+}
+QToolButton#Arc:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dArc);
+}
+QToolButton#Arc:checked{
+	background-image:url(:/GraphicsModelingKernel/cArc); 
+}
+
+QToolButton#LayoutManager:enabled{
+	background-image:url(:/GraphicsModelingKernel/nLayoutManager);
+}
+QToolButton#LayoutManager:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hLayoutManager);
+}
+QToolButton#LayoutManager:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dLayoutManager);
+}
+QToolButton#LayoutManager:checked{
+	background-image:url(:/GraphicsModelingKernel/cLayoutManager); 
+}
+
+QToolButton#Set:enabled{
+	background-image:url(:/GraphicsModelingKernel/nSet);
+}
+QToolButton#Set:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hSet);
+}
+QToolButton#Set:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dSet);
+}
+QToolButton#Set:checked{
+	background-image:url(:/GraphicsModelingKernel/cSet); 
+}
+
+QToolButton#actCreateSubSystem:enabled{
+	background-image:url(:/GraphicsModelingKernel/nCreteaSubSystem);
+}
+QToolButton#actCreateSubSystem:hover{ 
+	background-image:url(:/GraphicsModelingKernel/hCreteaSubSystem);
+}
+QToolButton#actCreateSubSystem:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/dCreteaSubSystem);
+}
+QToolButton#actCreateSubSystem:checked{
+	background-image:url(:/GraphicsModelingKernel/pCreteaSubSystem); 
+}
+
+QPushButton#bookmark:disabled{
+	image:url(:/GraphicsModelingKernel/dbookmark);
+}
+
+QToolButton#Undo{
+	background-image:url(:/GraphicsModelingKernel/menuCancelNormal);
+}
+QToolButton#Undo:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/menuCancelDisable);
+}
+QToolButton#Undo:hover{
+	background-image:url(:/GraphicsModelingKernel/menuCancelShaped);
+}
+QToolButton#Undo:checked{ 
+	background-image:url(:/GraphicsModelingKernel/menuCancelSelected);
+}
+
+QToolButton#Redo{
+	background-image:url(:/GraphicsModelingKernel/menuRedoNormal);
+}
+QToolButton#Redo:disabled{ 
+	background-image:url(:/GraphicsModelingKernel/menuRedoDisable);
+}
+QToolButton#Redo:hover{
+	background-image:url(:/GraphicsModelingKernel/menuRedoShaped);
+}
+QToolButton#Redo:checked{ 
+	background-image:url(:/GraphicsModelingKernel/menuRedoSelect);
+}
+
+KCustomDialog#navigationPreview #contentWidget {
+    background-color: #E7EEF6;
+}
+
+KTitleBar#navigationPreview{
+	background:#d1e0ef;
+	min-height:25px;
+	max-height:25px;
+}
+
+KTitleBar#navigationPreview QLabel{
+	font-size:14px;
+	color:#35405C;
+	font-family:"Microsoft YaHei";
+}
+
+KTitleBar#navigationPreview QToolButton#toolButton_close{
+	min-height:16px;
+	max-height:16px;
+	min-width:16px;
+	max-width:16px;
+	border-image: url(:/GraphicsModelingKernel/guanbi);
+}
+
+KTitleBar#navigationPreview QToolButton#toolButton_close:hover{
+	border-image: url(:/GraphicsModelingKernel/guanbihuaguo);
+}
+KTitleBar#navigationPreview QToolButton#toolButton_close:pressed{
+	border-image: url(:/GraphicsModelingKernel/guanbidianji);
+}
+
+QTableWidget#BookMark_Mangertablewidget{
+	background-color:#ffffff;
+	border:1px solid #bfbfbf;
+}
+
+QToolButton#FullScreen[isFull="false"]{
+	background-image:url(:/GraphicsModelingKernel/toolBoardFullSrceenNormal);
+}
+
+QToolButton#FullScreen[isFull="false"]:hover{ 
+	background-image:url(:/GraphicsModelingKernel/toolBoardFullSrceenSlid);
+}
+QToolButton#FullScreen[isFull="false"]:disabled{
+	background-image:url(:/GraphicsModelingKernel/toolBoardFullSrceenDisable);
+}
+
+QToolButton#FullScreen[isFull="false"]:checked{ 
+	background-image:url(:/GraphicsModelingKernel/toolBoardFullSrceenClick);
+}
+
+QToolButton#FullScreen[isFull="true"]{
+	background-image:url(:/GraphicsModelingKernel/toolExitFullScreen);
+}
+
+QToolButton#FullScreen[isFull="true"]:hover{ 
+	background-image:url(:/GraphicsModelingKernel/toolExitFullScreenShaped);
+}
+QToolButton#FullScreen[isFull="true"]:disabled{
+	background-image:url(:/GraphicsModelingKernel/toolExitFullScreenDisable);
+}
+
+QToolButton#FullScreen[isFull="true"]:checked{ 
+	background-image:url(:/GraphicsModelingKernel/toolExitFullScreenSelect);
+}
+
+QToolButton#Lock[isLock="false"]{
+	background-image:url(:/GraphicsModelingKernel/toolUnlockNormal);
+}
+
+QToolButton#Lock[isLock="false"]:hover{ 
+	background-image:url(:/GraphicsModelingKernel/toolUnlockSlid);
+}
+QToolButton#Lock[isLock="false"]:disabled{
+	background-image:url(:/GraphicsModelingKernel/toolUnlockDisable);
+}
+
+QToolButton#Lock[isLock="false"]:checked{ 
+	background-image:url(:/GraphicsModelingKernel/toolUnlockClick);
+}
+
+QToolButton#Lock[isLock="true"]{
+	background-image:url(:/GraphicsModelingKernel/toolLockNormal);
+}
+
+QToolButton#Lock[isLock="true"]:hover{ 
+	background-image:url(:/GraphicsModelingKernel/toolLockSlid);
+}
+QToolButton#Lock[isLock="true"]:disabled{
+	background-image:url(:/GraphicsModelingKernel/toolLockDisable);
+}
+
+QToolButton#Lock[isLock="true"]:checked{ 
+	background-image:url(:/GraphicsModelingKernel/toolLockClick);
+}

@@ -1,0 +1,15 @@
+﻿<math>
+  <mrow>
+    <mi>asin</mi>
+    <mfenced>
+      <mrow>
+        <mi>&omega;</mi>
+        <mi>&#x03c7;</mi>
+        <mo>+</mo>
+        <mi>&#x03c6;</mi>
+      </mrow>
+    </mfenced>
+    <mo>+</mo>
+    <mi>b</mi>
+  </mrow>
+</math>

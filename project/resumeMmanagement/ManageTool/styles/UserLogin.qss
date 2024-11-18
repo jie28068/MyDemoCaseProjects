@@ -1,0 +1,24 @@
+﻿QLabel{
+        background-color:#ababab;
+        border:1px solid #ababab;
+        border-radius:6px;
+}
+#lab_id,#lab_passwd,#lab_name,#lab_section,#lab_tel,#lab_mail,#lab_passwrod{
+        border-radius:0px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+}
+
+QLineEdit{
+        border:1px solid #556DD9;
+        border-left-width:0px;
+        border-top-width:0px;
+        border-right-width:0px;
+
+}
+QPushButton{
+
+}
+QToolButton{
+
+}

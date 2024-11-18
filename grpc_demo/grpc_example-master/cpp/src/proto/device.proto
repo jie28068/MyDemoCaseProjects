@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package device_service;
+
+service DeviceService {
+  // 返回一维字符串数组
+  rpc GetDeviceStringList (DeviceNameListRequest) returns (DeviceNameListResponse) {}
+  // 返回单个int值
+  rpc GetDeviceSlaveCnt (DeviceSlaveCntRequest) returns (DeviceSlaveCntResponse) {}
+  // 返回自定义结构体类型
+  rpc GetDeviceInfo (DeviceInfoRequest) returns (DeviceInfoResponse) {}
+  // 返回二维字符串数组
+  rpc GetDeviceTableBySlaveId (DeviceTableBySlaveIdRequest) returns (DeviceTableBySlaveIdResponse) {}
+}
+
+// 设备列表信息
+message DeviceNameListRequest {
+  string device_name = 1;
+}
+
+message DeviceNameListResponse {
+  repeated string device_names = 1;
+}
+
+message DeviceInfoDetail {
+  string ip = 1;
+  int32 port = 2;
+  string type = 3;
+  bool server_status = 4;
+  bool simulate_status = 5;
+  bool plan_status = 6;
+}
+
+// 设备详细信息
+message DeviceInfoRequest {
+  // 查询的设备名称
+  string device_name = 1;
+}
+
+message DeviceInfoResponse {
+  DeviceInfoDetail info = 1;
+}
+
+// 获取设备从机数量
+message DeviceSlaveCntRequest {
+  string device_name = 1;
+}
+
+message DeviceSlaveCntResponse {
+  int32 slave_cnt = 1;
+}
+
+// 根据设备名称和从机id和测点信息 获取设备详细信息,回复是二维List
+message DeviceTableBySlaveIdRequest {
+  string device_name = 1;
+  int32 slave_id = 2;
+  string point_name = 3;
+}
+
+message DeviceTableRow{
+  repeated string row = 1;
+}
+
+message DeviceTableBySlaveIdResponse {
+  DeviceTableRow head_data = 1;
+  repeated DeviceTableRow table_data = 2;
+}

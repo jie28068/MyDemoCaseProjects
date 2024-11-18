@@ -1,0 +1,650 @@
+.ScopeViewToolbar QToolButton {
+	color: #036eab;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+
+.ScopeViewToolbar QToolButton:disabled {
+	color: gray;
+}
+
+.PlotToolbar QToolButton {
+	color: #036eab;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+
+.PlotToolbar QToolButton:disabled {
+	color: gray;
+}
+
+.PlotSettingsDialog {
+	background: white;
+}
+
+/*悬浮工具栏*/
+.PlotToolbar {
+	background-color: white;
+	padding: 3px;
+	spacing: 3px;
+	border: 1px solid #b7cade;
+}
+
+.PlotToolbar QToolButton:pressed {
+	background-color: #cae0f1;
+}
+
+.PlotToolbar QToolButton#set {
+	image: url(:/settings);
+}
+
+.PlotToolbar QToolButton#set:hover {
+	image: url(:/settings_hover);
+}
+
+.PlotToolbar QToolButton#set:disabled {
+	image: url(:/settings_disabled);
+}
+
+.PlotToolbar QToolButton#set:pressed {
+	image: url(:/settings_pressed);
+}
+
+.PlotToolbar QToolButton#removeallcurve {
+	image: url(:/clearAll);
+}
+
+.PlotToolbar QToolButton#removeallcurve:hover {
+	image: url(:/clearAll_hover);
+}
+
+.PlotToolbar QToolButton#removeallcurve:disabled {
+	image: url(:/clearAll_disabled);
+}
+
+.PlotToolbar QToolButton#removeallcurve:pressed {
+	image: url(:/clearAll_pressed);
+}
+
+.PlotToolbar QToolButton#showanalasisinfo {
+	image: url(:/displayDataAnalysis);
+}
+
+.PlotToolbar QToolButton#showanalasisinfo:hover {
+	image: url(:/displayDataAnalysis_hover);
+}
+
+.PlotToolbar QToolButton#showanalasisinfo:disabled {
+	image: url(:/displayDataAnalysis_disabled);
+}
+
+.PlotToolbar QToolButton#showanalasisinfo:pressed {
+	image: url(:/displayDataAnalysis_pressed);
+}
+
+/*面板工具栏*/
+.ScopeViewToolbar {
+	background-color: white;
+	spacing: 8px;
+	padding: 8px;
+}
+
+.ScopeViewToolbar::separator {
+	background-color: #CECECE;
+	width: 1px;
+	height: 20px;
+}
+
+.ScopeViewToolbar QLabel {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	background-color: white;
+	border: 0px
+}
+
+.ScopeViewToolbar QToolButton:pressed,.ScopeViewToolbar QToolButton:checked {
+	background-color: #cae0f1;
+}
+
+.ScopeViewToolbar QToolButton#add {
+	image: url(:/add);
+}
+
+.ScopeViewToolbar QToolButton#add:hover {
+	image: url(:/add_hover);
+}
+
+.ScopeViewToolbar QToolButton#add:disabled {
+	image: url(:/add_disabled);
+}
+
+.ScopeViewToolbar QToolButton#add:pressed {
+	image: url(:/add_pressed);
+}
+
+.ScopeViewToolbar QToolButton#copy {
+	image: url(:/copy);
+}
+
+.ScopeViewToolbar QToolButton#copy:hover {
+	image: url(:/copy_hover);
+}
+
+.ScopeViewToolbar QToolButton#copy:disabled {
+	image: url(:/copy_disabled);
+}
+
+.ScopeViewToolbar QToolButton#copy:pressed {
+	image: url(:/copy_pressed);
+}
+
+.ScopeViewToolbar QToolButton#cut {
+	image: url(:/cut);
+}
+
+.ScopeViewToolbar QToolButton#cut:hover {
+	image: url(:/cut_hover);
+}
+
+.ScopeViewToolbar QToolButton#cut:disabled {
+	image: url(:/cut_disabled);
+}
+
+.ScopeViewToolbar QToolButton#cut:pressed {
+	image: url(:/cut_pressed);
+}
+
+.ScopeViewToolbar QToolButton#paste {
+	image: url(:/zhantie);
+}
+
+.ScopeViewToolbar QToolButton#paste:hover {
+	image: url(:/zhantie_hover);
+}
+
+.ScopeViewToolbar QToolButton#paste:disabled {
+	image: url(:/zhantie_disabled);
+}
+
+.ScopeViewToolbar QToolButton#paste:pressed {
+	image: url(:/zhantie_pressed);
+}
+
+.ScopeViewToolbar QToolButton#del {
+	image: url(:/delete);
+}
+
+.ScopeViewToolbar QToolButton#del:hover {
+	image: url(:/delete_hover);
+}
+
+.ScopeViewToolbar QToolButton#del:disabled {
+	image: url(:/delete_disabled);
+}
+
+.ScopeViewToolbar QToolButton#del:pressed {
+	image: url(:/delete_pressed);
+}
+
+.ScopeViewToolbar QToolButton#selectall {
+	image: url(:/selectAll);
+}
+
+.ScopeViewToolbar QToolButton#selectall:hover {
+	image: url(:/selectAll_hover);
+}
+
+.ScopeViewToolbar QToolButton#selectall:disabled {
+	image: url(:/selectAll_disabled);
+}
+
+.ScopeViewToolbar QToolButton#selectall:pressed {
+	image: url(:/selectAll_pressed);
+}
+
+.ScopeViewToolbar QToolButton#displaychosed {
+	image: url(:/displaySelected);
+}
+
+.ScopeViewToolbar QToolButton#displaychosed:hover {
+	image: url(:/displaySelected_hover);
+}
+
+.ScopeViewToolbar QToolButton#displaychosed:disabled {
+	image: url(:/displaySelected_disabled);
+}
+
+.ScopeViewToolbar QToolButton#displaychosed:pressed {
+	image: url(:/displaySelected_pressed);
+}
+
+.ScopeViewToolbar QToolButton#displayall {
+	image: url(:/displayAll);
+}
+
+.ScopeViewToolbar QToolButton#displayall:hover {
+	image: url(:/displayAll_hover);
+}
+
+.ScopeViewToolbar QToolButton#displayall:disabled {
+	image: url(:/displayAll_disabled);
+}
+
+.ScopeViewToolbar QToolButton#displayall:pressed {
+	image: url(:/displayAll_pressed);
+}
+
+.ScopeViewToolbar QToolButton#initcord {
+	image: url(:/initPos);
+}
+
+.ScopeViewToolbar QToolButton#initcord:hover {
+	image: url(:/initPos_hover);
+}
+
+.ScopeViewToolbar QToolButton#initcord:disabled {
+	image: url(:/initPos_disabled);
+}
+
+.ScopeViewToolbar QToolButton#initcord:pressed {
+	image: url(:/initPos_pressed);
+}
+
+.ScopeViewToolbar QToolButton#fullx {
+	image: url(:/horizontalFilling);
+}
+
+.ScopeViewToolbar QToolButton#fullx:hover {
+	image: url(:/horizontalFilling_hover);
+}
+
+.ScopeViewToolbar QToolButton#fullx:disabled {
+	image: url(:/horizontalFilling_disabled);
+}
+
+.ScopeViewToolbar QToolButton#fullx:pressed {
+	image: url(:/horizontalFilling_pressed);
+}
+
+.ScopeViewToolbar QToolButton#fully {
+	image: url(:/verticalFilling);
+}
+
+.ScopeViewToolbar QToolButton#fully:hover {
+	image: url(:/verticalFilling_hover);
+}
+
+.ScopeViewToolbar QToolButton#fully:disabled {
+	image: url(:/verticalFilling_disabled);
+}
+
+.ScopeViewToolbar QToolButton#fully:pressed {
+	image: url(:/verticalFilling_pressed);
+}
+
+.ScopeViewToolbar QToolButton#zoomx {
+	image: url(:/scaleX);
+}
+
+.ScopeViewToolbar QToolButton#zoomx:hover {
+	image: url(:/scaleX_hover);
+}
+
+.ScopeViewToolbar QToolButton#zoomx:disabled {
+	image: url(:/scaleX_disabled);
+}
+
+.ScopeViewToolbar QToolButton#zoomx:pressed {
+	image: url(:/scaleX_pressed);
+}
+
+.ScopeViewToolbar QToolButton#zoomx:checked {
+	image: url(:/scaleX_pressed);
+}
+
+.ScopeViewToolbar QToolButton#zoomy {
+	image: url(:/scaleY);
+}
+
+.ScopeViewToolbar QToolButton#zoomy:hover {
+	image: url(:/scaleY_hover);
+}
+
+.ScopeViewToolbar QToolButton#zoomy:disabled {
+	image: url(:/scaleY_disabled);
+}
+
+.ScopeViewToolbar QToolButton#zoomy:pressed {
+	image: url(:/scaleY_pressed);
+}
+
+.ScopeViewToolbar QToolButton#zoomy:checked {
+	image: url(:/scaleY_pressed);
+}
+
+.ScopeViewToolbar QToolButton#layout {
+	image: url(:/layout);
+}
+
+.ScopeViewToolbar QToolButton#layout:hover {
+	image: url(:/layout_hover);
+}
+
+.ScopeViewToolbar QToolButton#layout:disabled {
+	image: url(:/layout_disabled);
+}
+
+.ScopeViewToolbar QToolButton#layout:pressed {
+	image: url(:/layout_pressed);
+}
+
+.ScopeViewToolbar QToolButton#syn {
+	image: url(:/sync);
+}
+
+.ScopeViewToolbar QToolButton#syn:hover {
+	image: url(:/sync_hover);
+}
+
+.ScopeViewToolbar QToolButton#syn:disabled {
+	image: url(:/sync_disabled);
+}
+
+.ScopeViewToolbar QToolButton#syn:pressed {
+	image: url(:/sync_pressed);
+}
+
+.ScopeViewToolbar QToolButton#syn:checked {
+	image: url(:/sync_pressed);
+}
+
+.ScopeViewToolbar QToolButton#mousept {
+	image: url(:/selectByMouse);
+}
+
+.ScopeViewToolbar QToolButton#mousept:hover {
+	image: url(:/selectByMouse_hover);
+}
+
+.ScopeViewToolbar QToolButton#mousept:disabled {
+	image: url(:/selectByMouse_disabled);
+}
+
+.ScopeViewToolbar QToolButton#mousept:pressed {
+	image: url(:/selectByMouse_pressed);
+}
+
+.ScopeViewToolbar QToolButton#mousept:checked {
+	image: url(:/selectByMouse_pressed);
+}
+
+.ScopeViewToolbar QToolButton#dict {
+	image: url(:/variableTable);
+}
+
+.ScopeViewToolbar QToolButton#dict:hover {
+	image: url(:/variableTable_hover);
+}
+
+.ScopeViewToolbar QToolButton#dict:disabled {
+	image: url(:/variableTable_disabled);
+}
+
+.ScopeViewToolbar QToolButton#dict:pressed {
+	image: url(:/variableTable_pressed);
+}
+
+.ScopeViewToolbar QToolButton#export {
+	image: url(:/export);
+}
+
+.ScopeViewToolbar QToolButton#export:hover {
+	image: url(:/export_hover);
+}
+
+.ScopeViewToolbar QToolButton#export:disabled {
+	image: url(:/export_disabled);
+}
+
+.ScopeViewToolbar QToolButton#export:pressed {
+	image: url(:/export_pressed);
+}
+
+.ScopeViewToolbar QToolButton#undo {
+	image: url(:/undo);
+}
+
+.ScopeViewToolbar QToolButton#undo:hover {
+	image: url(:/undo_hover);
+}
+
+.ScopeViewToolbar QToolButton#undo:disabled {
+	image: url(:/undo_disabled);
+}
+
+.ScopeViewToolbar QToolButton#undo:pressed {
+	image: url(:/undo_pressed);
+}
+
+.ScopeViewToolbar QToolButton#redo {
+	image: url(:/redo);
+}
+
+.ScopeViewToolbar QToolButton#redo:hover {
+	image: url(:/redo_hover);
+}
+
+.ScopeViewToolbar QToolButton#redo:disabled {
+	image: url(:/redo_disabled);
+}
+
+.ScopeViewToolbar QToolButton#redo:pressed {
+	image: url(:/redo_pressed);
+}
+
+/*曲线设置TreeView*/
+.CurveSettingTreeView QHeaderView::section:horizontal {
+	border-top: none;
+	border-left: none;
+	border-right: 1px solid #bfbfbf;
+}
+
+.CurveSettingTreeView QHeaderView::section:horizontal:last {
+	border-right: none;
+}
+
+.CurveSettingTreeView {
+	margin: 0px;
+}
+
+.CurveSettingTreeView::item {
+	margin: 0px;
+}
+
+.CurveSettingTreeView::item:last {
+	margin-right: 1px;
+}
+
+.CurveSettingTreeView::item:first {
+	margin-left: 1px;
+}
+
+/* .CurveSettingTreeView {
+	outline: 0px;
+	show-decoration-selected: 1;
+}
+
+.CurveSettingTreeView::item:selected {
+	background-color: #CAE0F1;
+}
+
+.CurveSettingTreeView::item:hover {
+	background-color: #CAE0F1
+}
+
+.CurveSettingTreeView::item {
+	color: #333333;
+	outline: none;
+	border: 0px;
+	height: 25px;
+	margin: 1px 0px 1px 0px;
+}
+
+.CurveSettingTreeView::item:selected:active {
+	background-color: #CAE0F1;
+	color: #036EB7;
+} */
+
+/*曲线设置*/
+/*.PlotSettingsDialog {
+	border: 0px solid;
+}*/
+
+.PlotSettingsDialog QDoubleSpinBox {
+	color: #333333;
+	border: 1px solid #CECECE;
+	background-color: #FFFFFF;
+	padding-left: 3px;
+	height: 25px;
+}
+
+.PlotSettingsDialog QDoubleSpinBox:focus,
+.PlotSettingsDialog QDoubleSpinBox:hover,
+.CurveSettingTreeView QSpinBox:focus,
+.CurveSettingTreeView QSpinBox:hover {
+	border: 1px solid #2CA6E0;
+}
+
+.PlotSettingsDialog QDoubleSpinBox:disabled,
+.CurveSettingTreeView QSpinBox:disabled {
+	color: #BFBFBF;
+	border: 1px solid #CECECE;
+	background-color: #ECECEC;
+}
+
+.PlotSettingsDialog QDoubleSpinBox:up-button,
+.CurveSettingTreeView QSpinBox:up-button {
+	image: url(:/previousItem);
+}
+
+.PlotSettingsDialog QDoubleSpinBox:up-button:pressed,
+.CurveSettingTreeView QSpinBox:up-button:pressed {
+	image: url(:/previousItem_pressed);
+}
+
+.PlotSettingsDialog QDoubleSpinBox:up-button:disabled,
+.CurveSettingTreeView QSpinBox:up-button:disabled {
+	image: url(:/previousItem_disabled);
+}
+
+.PlotSettingsDialog QDoubleSpinBox:down-button,
+.CurveSettingTreeView QSpinBox:down-button {
+	image: url(:/nextItem);
+}
+
+.PlotSettingsDialog QDoubleSpinBox:down-button:pressed,
+.CurveSettingTreeView QSpinBox:down-button:pressed {
+	image: url(:/nextItem_pressed);
+}
+
+.PlotSettingsDialog QDoubleSpinBox:down-button:disabled,
+.CurveSettingTreeView QSpinBox:down-button:disabled {
+	image: url(:/nextItem_disabled);
+}
+
+.PlotSettingsDialog QFrame#frame {
+	border: 1px solid #cecece
+}
+
+.PlotSettingsDialog QSplitter::handle {
+	background-color: white
+}
+
+.PlotSettingsDialog QLabel#var {
+	color: #003D74
+}
+
+/* .PlotSettingsDialog QLabel {
+	color: #35405C;
+	height: 25px;
+} */
+
+/* .PlotSettingsDialog QComboBox {
+	color: #333333;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	height: 25px;
+	padding-left: 3px;
+}
+
+.PlotSettingsDialog QComboBox::down-arrow {
+	image: url(:/xiala);
+}
+
+.PlotSettingsDialog QComboBox::down-arrow:pressed {
+	image: url(:/xiala_pressed);
+}
+
+.PlotSettingsDialog QComboBox::down-arrow:disabled {
+	image: url(:/xiala_disabled);
+}
+
+.PlotSettingsDialog QComboBox::down-arrow:disabled {
+	image: url(:/xiala_disabled);
+}
+
+.PlotSettingsDialog QComboBox QAbstractItemView {
+	padding: 1px;
+	border: 1px solid #CECECE;
+	background-color: #FFFFFF;
+}
+
+.PlotSettingsDialog QComboBox QAbstractItemView::item {
+	color: #333333;
+	background-color: #FFFFFF;
+	height: 25px;
+	padding-left: 2px;
+}
+
+.PlotSettingsDialog QComboBox QAbstractItemView::item:selected {
+	color: #036eb7;
+	background-color: #D1E0EF;
+}
+
+.PlotSettingsDialog QComboBox QAbstractItemView::item:hover {
+	color: #333333;
+	background-color: #D1E0EF;
+} */
+
+/* .PlotSettingsDialog QLineEdit {
+	color: #333333;
+	height: 25px;
+	padding-left: 3px;
+} */
+
+.PlotSettingsDialog QLineEdit::placeholder {
+	color: #BFBFBF;
+}
+
+/* .PlotSettingsDialog QCheckBox {
+	color: #35405C;
+} */
+
+.PlotSettingsDialog QSplitter {
+	border: 0px solid;
+}
+
+/*数据分析视图*/
+.DataAnalyseTreeView {
+	background: rgb(0, 55, 86);
+	color: white;
+}
+
+.DataAnalyseTreeView::item {
+	border-top: 0px;
+	margin: 0px;
+}
+
+.DataAnalyseTreeView::item:hover {
+	color: blue;
+}

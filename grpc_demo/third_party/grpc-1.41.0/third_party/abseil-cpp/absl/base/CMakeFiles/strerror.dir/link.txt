@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11  -shared -Wl,-soname,libabsl_strerror.so.2103.0.0 -o libabsl_strerror.so.2103.0.0 CMakeFiles/strerror.dir/internal/strerror.cc.o 

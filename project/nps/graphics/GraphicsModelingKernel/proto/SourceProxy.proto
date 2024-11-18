@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "PortContext.proto";
+
+message SourceProxySerialize{
+	string cavas_name = 1;
+	string name = 2;
+	string uuid = 3;
+	string prototype_name = 4;
+	string module_type = 5;
+	bytes pos = 6;
+	bytes size = 7;
+	bytes scale_transform = 8;
+	bytes rotate_transform = 9;
+	bytes translate_transform = 10;
+	string state = 11;
+	string state_tips = 12;
+	repeated PortContextSerialize portList = 13;
+	bool is_support_addordelete_port = 14;
+	bytes list_name_default_anchor = 15;
+	bytes name_angle_offset = 16;
+	bytes svg_image_list = 17;
+	bytes extra_info_map = 18;
+	bytes annotation_map = 19;
+	bool is_had_upper_limitation = 20;
+	bool is_had_lower_limitation = 21;
+	bytes data_points_map = 22;
+	bytes xaxis_flip_transform = 23;
+	bytes yaxis_flip_transform = 24;
+	bytes svg_image_map = 25;
+	bytes source_property = 26;
+	string prototype_name_chs = 27;
+	string prototype_readable_name = 28;
+	string comment_state = 29;
+}

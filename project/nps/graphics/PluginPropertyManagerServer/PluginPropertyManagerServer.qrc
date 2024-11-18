@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/checkbox">
+        <file>Resources/CheckBox_checked.png</file>
+        <file>Resources/CheckBox_checked_disable.png</file>
+        <file>Resources/CheckBox_partiallyChecked.png</file>
+        <file>Resources/CheckBox_partiallyChecked_disable.png</file>
+        <file>Resources/CheckBox_unchecked.png</file>
+        <file>Resources/CheckBox_checked_disable.png</file>
+        <file>Resources/CheckBox_partiallyChecked_disable.png</file>
+        <file>Resources/CheckBox_unchecked_disable.png</file>
+        <file>Resources/JumpToConnectModel.png</file>
+    </qresource>
+    <qresource prefix="/move">
+        <file>Resources/down.png</file>
+        <file>Resources/down_disabled.png</file>
+        <file>Resources/down_hover.png</file>
+        <file>Resources/down_pressed.png</file>
+        <file>Resources/up.png</file>
+        <file>Resources/up_disabled.png</file>
+        <file>Resources/up_hover.png</file>
+        <file>Resources/up_pressed.png</file>
+        <file>Resources/ComboboxDownArrow.png</file>
+    </qresource>
+    <qresource prefix="/TheoryGraph">
+        <file>Resources/TheoryGraph/DFIG-theory-cn.png</file>
+        <file>Resources/TheoryGraph/DFIG-theory-en.png</file>
+        <file>Resources/TheoryGraph/EnergyStorageBattery-theory-cn.png</file>
+        <file>Resources/TheoryGraph/EnergyStorageBattery-theory-en.png</file>
+        <file>Resources/TheoryGraph/WindGenerator-theory-cn.png</file>
+        <file>Resources/TheoryGraph/WindGenerator-theory-en.png</file>
+    </qresource>
+</RCC>

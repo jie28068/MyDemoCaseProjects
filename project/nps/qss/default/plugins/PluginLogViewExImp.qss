@@ -1,0 +1,196 @@
+PluginLogViewExImp{
+    background-color: white;
+}
+/*修改按钮字体或者字号需要在代码中同步修改按钮宽度计算依赖的字体*/
+PluginLogViewExImp ModuleFilterBar #filter{
+	font: 14px "微软雅黑";
+	color:#35405c;
+	background-color: rgba(255, 255, 255, 0);
+}
+PluginLogViewExImp ModuleFilterBar #filter:checked{
+	font: 14px "微软雅黑";
+	text-decoration: underline;
+	color:#003D74;
+	background-color: rgba(255, 255, 255, 0);
+}
+PluginLogViewExImp SearchEdit#lineEdit_Search{
+	color:#333333;
+	font: 14px "微软雅黑";
+	border:0px solid #BFBFBF;
+	padding-left:0px;
+}
+PluginLogViewExImp SearchEdit#lineEdit_Search:disabled{
+	color:#BFBFBF;
+	font: 14px "微软雅黑";
+	border:0px solid #BFBFBF;
+	padding-left:0px;
+}
+PluginLogViewExImp SearchEdit#lineEdit_Search[text=\"\"]{
+	color:#BFBFBF;
+	font: 14px "微软雅黑";
+	border:0px solid #BFBFBF;
+	padding-left:0px;
+}
+
+PluginLogViewExImp #frm_search{
+	border:1px solid #BFBFBF;
+	margin-top:2px;
+	
+}
+PluginLogViewExImp #frm_search:hover{
+	border:1px solid #2CA6E0;
+}
+
+PluginLogViewExImp LogLevelFilter QPushButton#btn_icon{
+    height:25px;
+	background-color: rgba(255, 255, 255, 0);
+	font:14px "微软雅黑";
+	color:#35405C;
+}
+PluginLogViewExImp LogLevelFilter QLabel{
+	font: 14px "微软雅黑";
+	color:#003D74;
+	padding:0px;
+}
+PluginLogViewExImp LogLevelFilter[checked="false"]{
+	background:transparent;
+}
+PluginLogViewExImp LogLevelFilter[checked="true"]{
+	background-color: #E6EEF7;
+}
+PluginLogViewExImp #separator{
+	border:1px solid #B7CADE;
+	margin:4 0 4 0;
+}
+
+PluginLogViewExImp QLabel#lab_total_count{
+	font:14px "微软雅黑";
+	color:#35405C;
+}
+
+PluginLogViewExImp QTableView{
+	border:0px solid #bfbfbf;
+	background:#ffffff;
+	outline:none;
+    margin-left:10px;
+}
+PluginLogViewExImp QTableView::item {
+	background: transparent;
+	margin-bottom: 1px;
+	height:28px;
+}
+
+PluginLogViewExImp QTableView::item:hover {
+	margin-bottom: 1px;
+    background-color:#D1E0EF;
+}
+
+PluginLogViewExImp QTableView::item:selected {
+	margin-bottom: 1px;
+    border: none;
+}
+PluginLogViewExImp QTableView::item:selected:active{
+	margin-bottom: 1px;
+	background-color: #d1e0ef;
+}
+PluginLogViewExImp QTableView::item:selected:!active {
+	margin-bottom: 1px;
+	background-color: #d1e0ef;
+}
+PluginLogViewExImp QFrame#frm_line{
+	border:1px solid #B7CADE;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+PluginLogViewExImp SearchEdit #m_clearButton{
+	background-color: #B7CADE;
+	border-image: url(:/image/clearAll.png);
+	margin:0px 3px 0px 0px;
+	width:16;
+	height:16;
+}
+PluginLogViewExImp SearchEdit #m_clearButton:hover{
+	background-color: #D1E0EF;
+}
+PluginLogViewExImp SearchEdit #m_clearButton:pressed{
+	background-color: #7E9CBA;
+}
+
+PluginLogViewExImp #toolButton_ClearFilter{
+	border-image: url(:/image/toolbutton/清除所有过滤-正常.png);
+}
+PluginLogViewExImp #toolButton_ClearFilter:hover{
+	border-image: url(:/image/toolbutton/清除所有过滤-滑过.png);
+}
+PluginLogViewExImp #toolButton_ClearFilter:pressed{
+	border-image: url(:/image/toolbutton/清除所有过滤-点击.png);
+}
+PluginLogViewExImp #toolButton_ClearFilter:!enabled{
+	border-image: url(:/image/toolbutton/清除所有过滤-禁用.png);
+}
+PluginLogViewExImp #toolButton_Clear{
+	border-image: url(:/image/toolbutton/清空-正常.png);
+}
+PluginLogViewExImp #toolButton_Clear:hover{
+	border-image: url(:/image/toolbutton/清空-滑过.png);
+}
+PluginLogViewExImp #toolButton_Clear:pressed{
+	border-image: url(:/image/toolbutton/清空-点击.png);
+}
+PluginLogViewExImp #toolButton_Clear:!enabled{
+	border-image: url(:/image/toolbutton/清空-禁用.png);
+}
+PluginLogViewExImp #toolButton_Copy{
+	border-image: url(:/image/toolbutton/复制-正常.png);
+}
+PluginLogViewExImp #toolButton_Copy:hover{
+	border-image: url(:/image/toolbutton/复制-滑过.png);
+}
+PluginLogViewExImp #toolButton_Copy:pressed{
+	border-image: url(:/image/toolbutton/复制-点击.png);
+}
+PluginLogViewExImp #toolButton_Copy:!enabled{
+	border-image: url(:/image/toolbutton/复制-禁用.png);
+}
+PluginLogViewExImp #toolButton_Font{
+	border-image: url(:/image/字体-正常.png);
+}
+PluginLogViewExImp #toolButton_Font:hover{
+	border-image: url(:/image/字体-滑过.png);
+}
+PluginLogViewExImp #toolButton_Font:pressed{
+	border-image: url(:/image/字体-点击.png);
+}
+PluginLogViewExImp #toolButton_Font:!enabled{
+	border-image: url(:/image/字体-禁用.png);
+}
+PluginLogViewExImp #toolButton_OpenDir{
+	border-image: url(:/image/toolbutton/打开日志文件夹-正常.png);
+}
+PluginLogViewExImp #toolButton_OpenDir:hover{
+	border-image: url(:/image/toolbutton/打开日志文件夹-滑过.png);
+}
+PluginLogViewExImp #toolButton_OpenDir:pressed{
+	border-image: url(:/image/toolbutton/打开日志文件夹-点击.png);
+}
+PluginLogViewExImp #toolButton_OpenDir:!enabled{
+	border-image: url(:/image/toolbutton/打开日志文件夹-禁用.png);
+}
+PluginLogViewExImp #toolButton_Print{
+	border-image: url(:/image/toolbutton/打印-正常.png);
+}
+PluginLogViewExImp #toolButton_Print:hover{
+	border-image: url(:/image/toolbutton/打印-滑过.png);
+}
+PluginLogViewExImp #toolButton_Print:pressed{
+	border-image: url(:/image/toolbutton/打印-点击.png);
+}
+PluginLogViewExImp #toolButton_Print:!enabled{
+	border-image: url(:/image/toolbutton/打印-禁用.png);
+}
+PluginLogViewExImp #toolButton_Search{
+	border-image: url(:/image/查找-正常.png);
+	border-style:flat;
+	background:transparent;
+}

@@ -1,0 +1,7 @@
+﻿  29子集和为几的子集.cpp
+E:\粤嵌\VS代码\MyLetCode\29子集和为几的子集.cpp(36,21): warning C4018: “<”: 有符号/无符号不匹配
+E:\粤嵌\VS代码\MyLetCode\29子集和为几的子集.cpp(39,22): warning C4018: “<”: 有符号/无符号不匹配
+E:\粤嵌\VS代码\MyLetCode\29子集和为几的子集.cpp(54,9): warning C4018: “>=”: 有符号/无符号不匹配
+E:\粤嵌\VS代码\MyLetCode\29子集和为几的子集.cpp(84,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\粤嵌\VS代码\MyLetCode\29子集和为几的子集.cpp(86,21): warning C4018: “<”: 有符号/无符号不匹配
+  LetCode.vcxproj -> E:\粤嵌\VS代码\MyLetCode\LetCode\Debug\LetCode.exe

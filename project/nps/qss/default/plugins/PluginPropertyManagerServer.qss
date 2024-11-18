@@ -1,0 +1,374 @@
+/*QCheckBox*/
+QCheckBox::indicator{
+	width:20px;
+	height:20px;
+	background:transparent;
+}
+
+QCheckBox::indicator:enabled:checked{
+	image:url(:/checkbox/Resources/CheckBox_checked.png);
+} 
+
+QCheckBox::indicator:enabled:unchecked{
+	image:url(:/checkbox/Resources/CheckBox_unchecked.png);
+} 
+
+QCheckBox::indicator:enabled:indeterminate{
+	image:url(:/checkbox/Resources/CheckBox_partiallyChecked.png);
+} 
+
+QCheckBox::indicator:!enabled:checked{
+	image:url(:/checkbox/Resources/CheckBox_checked_disable.png);
+} 
+
+QCheckBox::indicator:!enabled:unchecked{
+	image:url(:/checkbox/Resources/CheckBox_unchecked_disable.png);
+} 
+
+QCheckBox::indicator:!enabled:indeterminate{
+	image:url(:/checkbox/Resources/CheckBox_partiallyChecked_disable.png);
+} 
+
+QWidget#PropertyDialog{
+	background-color: #fbfcff;
+}
+
+PropertyDialog QLabel{
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+}
+
+PropertyDialog QLabel#Iconlabel{
+	qproperty-alignment: 'AlignVCenter | AlignHCenter';
+}
+
+QLabel#PortListTittle{
+	max-height: 25px;
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+}
+
+QComboBox#DrawBoardNameComb, #ElecTypeComb, #ElecElementComb{
+	border-width: 0px;
+}
+
+PowerFlowSetWidget QTabWidget::pane,PropertyDialog QTabWidget::pane {
+	border-top: 1px solid #E1E8EF;
+	padding-top: 10px;
+}
+
+PowerFlowSetWidget QTabWidget QTabBar,PropertyDialog QTabWidget QTabBar{
+	font:normal bold 14px "Microsoft YaHei";
+}
+PowerFlowSetWidget QTabWidget QTabBar::tab,PropertyDialog QTabWidget QTabBar::tab{
+	min-height:30px;
+	min-width:30px;
+	border-top:0px solid #bfbfbf;
+	border-right:0px solid #bfbfbf;
+	border-bottom:2px solid #E1E8EF;
+}
+PowerFlowSetWidget QTabWidget QTabBar::tab:first,PropertyDialog QTabWidget QTabBar::tab:first
+{
+	border-left:1px solid #bfbfbf;
+}
+
+PowerFlowSetWidget QTabWidget QTabBar::tab:selected,PropertyDialog QTabWidget QTabBar::tab:selected{
+	color:#003d74;
+	background-color: #FFFFFF;
+	border-bottom-color:#003d74;
+}
+PowerFlowSetWidget QTabWidget QTabBar::tab:hover:!selected,PropertyDialog QTabWidget QTabBar::tab:hover:!selected{
+	border-bottom-color:transparent;
+}
+
+PropertyDialog > QStackedWidget{
+	border: 1px solid #bfbfbf;
+	padding-left: 10px;
+	padding-right:10px;
+	padding-bottom: 10px;
+}
+
+PropertyDialog > QStackedWidget >QWidget {
+	border: 0px;
+	padding: 0px;
+	margin:0px;
+}
+
+PropertyDialog QStackedWidget QComboBox#SwitchWidgetTabBox {
+	font:normal bold 14px "Microsoft YaHei";
+	color:#003d74;
+	background-color: #FFFFFF;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:2px solid #003d74;
+	margin-top: 5px;
+}
+
+PropertyDialog QStackedWidget QComboBox#SwitchWidgetTabBox:on {
+	background-color: #d1e0ef;
+}
+
+PropertyDialog QStackedWidget QComboBox#SwitchWidgetTabBox::down-arrow {
+	image: url(:/move/Resources/ComboboxDownArrow.png);
+}
+
+PropertyDialog QStackedWidget QWidget#SwitchBoxWidget {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:1px solid #E1E8EF;
+}
+
+PropertyDialog > QStackedWidget >QMainWindow {
+	border: 0px;
+	padding: 0px;
+	margin:0px;
+}
+
+PropertyDialog > QWidget#leftwidget {
+	border: 0px solid #bfbfbf;
+}
+
+PropertyDialog[isDlgmemoryBlock="true"] > QWidget#leftwidget > QTreeWidget {
+	border: 0px solid #bfbfbf;
+	margin-left: 0px;
+	background-color: #fbfcff;
+}
+
+PropertyDialog[isDlgmemoryBlock="false"] > QWidget#leftwidget > QTreeWidget {
+	border: 1px solid #bfbfbf;
+	margin-left: 0px;
+	background-color: #fbfcff;
+}
+
+PropertyDialog > QWidget#leftwidget > QTreeWidget QTreeWidgetItem {
+	height:25px;
+	border: none;
+}
+
+PropertyDialog > QWidget#leftwidget > QTreeWidget::item::hover {
+	height:25px;
+	border: none;
+	margin-right:0px;
+}
+
+PropertyDialog > QWidget#leftwidget > QTreeWidget::item::selected {
+	height:25px;
+	border: none;
+	margin-right:0px;
+}
+
+PropertyDialog > QWidget#leftwidget > QWidget#iconwidget {
+	border: 1px solid #cfcfcf;
+}
+
+PropertyDialog QStackedWidget QWidget#ElectricalParameterWidget QScrollArea{
+	border: 0;
+}
+PropertyDialog QStackedWidget QWidget#ElectricalParameterWidget .QWidget{
+	background-color:#ffffff;
+}
+
+PropertyDialog QTreeWidget#treeWidget::item:!enabled {
+	color:#BFBFBF;
+}
+
+PowerFlowSetWidget QTabWidget,PropertyDialog QTabWidget{
+	min-height: 30px;
+}
+
+PowerFlowSetWidget > QWidget {
+	border: 1px solid #bfbfbf;
+}
+
+QMainWindow#CurrentSimuWidget{
+	border: none;
+	background-color: #fbfcff;
+}
+
+CustomTableWidget QTableView,ElecContainerPortTableWidget QTableView,VarSelectWidget QTableWidget,SelectNodeWidget QTableWidget{
+	color:#333333;
+    font-size:14px;
+    font-family: "Microsoft YaHei";
+    outline: none;
+    border: none;
+	border-top:1px solid #bfbfbf;
+    border-left:1px solid #bfbfbf;
+    border-right:1px solid #bfbfbf;
+    border-bottom:1px solid #bfbfbf;
+    background-color:white; 
+    selection-color:#036eb7;
+    selection-background-color:#d1e0ef;
+}
+
+QListWidget#ModelNameListWidget:item{
+	min-height: 30px;
+}
+
+QTextBrowser#ControlParameterWidget_TextBrowser{
+	border: none;
+	outline: none;
+}
+
+ElecTypeWidget QTableWidget{
+	color:#333333;
+    font-size:14px;
+    font-family: "Microsoft YaHei";
+    outline: none;
+    border: none;
+	border-top:1px solid #bfbfbf;
+    border-left:1px solid #bfbfbf;
+    border-right:1px solid #bfbfbf;
+    border-bottom:1px solid #bfbfbf;
+    background-color:white;
+    selection-color:#036eb7;
+    selection-background-color:#d1e0ef;
+}
+
+CustomTreeWidget#ElecTypeWidget_TreeWidget{
+	border:none;
+}
+
+VarLineEdit {
+    height: 25px;
+    max-height: 25px;
+}
+
+TableView#FaultSimuWidget_TableView{
+	border:1px solid #bfbfbf;
+}
+
+DeviceTypeListWidget TableView,CreateDrawingboardWidget TableView,RightGraphicsEditWidget TableView,ConnectorWidget TableView,ComplexInstanceWidget TableView{
+	border:1px solid #bfbfbf;
+}
+
+ComponentParamPage QTableView{
+	border:1px solid #bfbfbf;
+}
+
+CustomLineEdit#SearchLineEdit{
+	min-height: 25px;
+}
+
+CustomLineEdit QPushButton#iconButton{
+	border:none;
+	background-color:transparent;
+	border-image:url(:/PluginComponentView/fangda);
+	width:16;
+	height:16;
+}
+
+SignalSelectWidget QLabel{
+	font-size:14px;
+	max-height: 26px;
+}
+
+SignalSelectWidget QLabel#TextLabel{
+	min-height: 26px;
+}
+
+SignalSelectWidget QTreeWidget#AllSignalsListWidget,QListWidget#ModelNameListWidget {
+	border-top: none;
+}
+
+SignalSelectWidget QListWidget#AllSignalsListWidget:item,#SelectedSignalsListWidget:item {
+	min-height: 25px;
+}
+
+SignalSelectWidget QTreeWidget {
+	margin-left: 0px;
+}
+
+SignalSelectWidget QWidget#Header{
+	border-left:1px solid #bfbfbf;
+	border-top:none;
+	border-right:1px solid #bfbfbf;
+	border-bottom: none;
+	min-height: 25px;
+}
+
+QWidget#Header {
+	color:#333333;
+    font-size:14px;
+	border-left:1px solid #bfbfbf;
+	border-top:1px solid #bfbfbf;
+	border-right:1px solid #bfbfbf;
+	border-bottom: none;
+	min-height: 25px;
+}
+
+QWidget#ElecTypeWidget_Header {
+	color:#333333;
+    font-size:14px;
+	border: none;
+	min-height: 25px;
+}
+
+QWidget#ElecTypeWidget_LeftWidget{
+	border:1px solid #bfbfbf;
+}
+
+QLabel{
+	font-weight:bold;
+}
+
+SignalSelectWidget QPushButton#UpButton {
+	border:none;
+	background-color:transparent;
+	border-image: url(:/move/Resources/up.png);
+	max-width:25px;
+	max-height:25px;
+}
+
+SignalSelectWidget QPushButton#UpButton:hover {
+	border-image: url(:/move/Resources/up_hover.png);
+}
+
+SignalSelectWidget QPushButton#UpButton:disabled {
+	border-image: url(:/move/Resources/up_disabled.png);
+}
+
+SignalSelectWidget QPushButton#UpButton:pressed {
+	border-image: url(:/move/Resources/up_pressed.png);
+}
+
+/**/
+SignalSelectWidget QPushButton#DownButton {
+	border:none;
+	background-color:transparent;
+	border-image: url(:/move/Resources/down.png);
+	max-width:25px;
+	max-height:25px;
+}
+
+SignalSelectWidget QPushButton#DownButton:hover {
+	border-image: url(:/move/Resources/down_hover.png);
+}
+
+SignalSelectWidget QPushButton#DownButton:disabled {
+	border-image: url(:/move/Resources/down_disabled.png);
+}
+
+SignalSelectWidget QPushButton#DownButton:pressed {
+	border-image: url(:/move/Resources/down_pressed.png);
+}
+
+/**/
+SignalSelectWidget QPushButton#removeButton {
+	border:none;
+	background-color:transparent;
+	border-image: url(:/delete);
+	max-width:25px;
+	max-height:25px;
+}
+
+SignalSelectWidget QPushButton#removeButton:hover {
+	border-image: url(:/delete_hover);
+}
+
+SignalSelectWidget QPushButton#removeButton:disabled {
+	border-image: url(:/delete_disabled);
+}
+
+SignalSelectWidget QPushButton#removeButton:pressed {
+	border-image: url(:/delete_pressed);
+}

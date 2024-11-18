@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "SourceProxy.proto";
+
+message ConnectorWireContextSerialize{
+	string uuid = 1;
+	bool auto_calculation = 2;
+	bytes points = 3;
+	bool connected = 4;
+	SourceProxySerialize src_source = 5;
+	SourceProxySerialize dst_source = 6;
+	string src_port_uuid = 7;
+	string dst_port_uuid = 8;
+	bytes pos = 9;
+	int32 wire_index = 10;
+	string signal_name = 11;
+	bytes start_point = 12;
+	bytes end_point = 13;
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11  -shared -Wl,-soname,libabsl_leak_check_disable.so.2103.0.0 -o libabsl_leak_check_disable.so.2103.0.0 CMakeFiles/leak_check_disable.dir/leak_check_disable.cc.o 

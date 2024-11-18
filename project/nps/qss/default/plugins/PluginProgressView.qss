@@ -1,0 +1,9 @@
+
+/*progress*/
+PluginProgressView{
+	border: 1px solid #BFBFBF;	
+}
+QWidget#ProgressWidget{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E2E9F3, stop:1 #ffffff);	
+}
+

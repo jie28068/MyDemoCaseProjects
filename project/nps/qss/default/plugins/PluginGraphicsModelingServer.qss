@@ -1,0 +1,73 @@
+DeviceTypeListWidget QTableView QHeaderView {
+    min-height: 36px;
+    min-width: 36px;
+}
+
+/*board toolbar*/
+BoardWidget QToolBar {
+    border: 2px solid #CDCDCD;
+}
+
+/*board slider*/
+SliderScale QSlider::add-page:horizontal {
+    background: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+SliderScale QSlider::sub-page:horizontal {
+    background: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+SliderScale QSlider::handle:horizontal {
+    background: transparent;
+    width: 13px;
+    border-width: 0px;
+    border-image: url(:/zoom/Resources/zoom/sliderHandle);
+}
+
+/*board slider zoom button*/
+SliderScale QPushButton#zoomOutButton,
+#zoomInButton {
+    background: transparent;
+}
+
+/*slider text*/
+SliderScale QLineEdit {
+    border: 1px solid #000000;
+}
+
+/*board border*/
+ICanvasView {
+    border: 0px;
+}
+
+/* 导航窗口 */
+QListWidget#navWidget {
+    background-color: #EBF3FE;
+    color: #35405C;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    border-right: none;
+    border-left: none;
+    /* border-top: 1px solid #B7CADE; */
+    border-bottom: 1px solid #B7CADE;
+}
+
+QListWidget#navWidget::item {
+    background-color: #EBF3FE;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+QListWidget#navWidget::item:selected {
+    color: #036EB7;
+}
+
+QListWidget#navWidget::item:selected:active {
+    color: #036EB7;
+}

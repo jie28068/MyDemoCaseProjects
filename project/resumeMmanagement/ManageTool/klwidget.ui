@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KLWidget</class>
+ <widget class="QWidget" name="KLWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>KLWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true">#stackedWidget{
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_main">
+      <property name="styleSheet">
+       <string notr="true">#page_main{
+	border:0px solid grey;
+}
+
+QLabel{
+	background-color:#002EA6;
+	color:#fff;
+	
+	font: 75 29pt &quot;微软雅黑&quot;;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="frm_title">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="lab_logo">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="lab_hello">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lab_department">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>待办事项</string>
+           </property>
+           <widget class="QPushButton" name="btn_plan_selection">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>60</y>
+              <width>371</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton{
+	background-color:#ffffff;
+	color:#002EA6;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #002EA6;
+	border-radius:8px;
+}
+QPushButton:pressed{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}
+QPushButton:checked{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}</string>
+            </property>
+            <property name="text">
+             <string>简历筛选计划</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Preferred</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="btn_HRMTool">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>170</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton{
+	background-color:#ffffff;
+	color:#002EA6;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #002EA6;
+	border-radius:8px;
+}
+QPushButton:pressed{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}
+QPushButton:checked{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}</string>
+              </property>
+              <property name="text">
+               <string>人力资源管理</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_WorkLog">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>170</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton{
+	background-color:#ffffff;
+	color:#002EA6;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #002EA6;
+	border-radius:8px;
+}
+QPushButton:pressed{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}
+QPushButton:checked{
+	background-color:#002EA6;
+	color:#ffffff;
+	font: 75 22pt &quot;微软雅黑&quot;;
+	border:1px solid #ffffff;
+	border-radius:8px;
+}</string>
+              </property>
+              <property name="text">
+               <string>查看工作日志</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="HRMTool" name="page_hrm"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HRMTool</class>
+   <extends>QWidget</extends>
+   <header>HRMTool/hrmtool.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

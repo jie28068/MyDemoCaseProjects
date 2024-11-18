@@ -1,0 +1,16 @@
+KBaseDlgBox KCentralWidget[Style=Normal] > QWidget#AboutView > QWidget{
+	background:white;
+}
+
+QMenu[noIcon=true]::item{
+	margin: 3px 15px 3px 15px;
+	padding-left: 0px;
+}
+
+QPushButton#clearAllButton{
+border:none;
+background-color:transparent;
+background-image:url(:/PluginComponentView/close);
+width:16;
+height:16;
+}

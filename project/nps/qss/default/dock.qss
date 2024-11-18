@@ -1,0 +1,269 @@
+/*
+ * Default style sheet on Windows Platforms
+ */
+ads--CDockContainerWidget {
+	background: transparent;
+}
+ads--CDockManager{
+    background-color: #e7eef6;
+}
+
+ads--CDockAreaTitleBar{
+	border-bottom:none;
+}
+ads--CDockAreaWidget #dockAreaFloatingButton{
+	border-image: url(:/module/Resources/default/common/module/float.png);
+}
+ads--CDockAreaWidget #dockAreaFloatingButton:hover{
+	border-image: url(:/module/Resources/default/common/module/float-hover.png);
+}
+ads--CDockAreaWidget #dockAreaFloatingButton:pressed{
+	border-image: url(:/module/Resources/default/common/module/float-press.png);
+}
+
+ads--CDockAreaWidget #dockAreaMaximizeButton{
+	border-image: url(:/module/Resources/default/common/module/max.png);
+}
+ads--CDockAreaWidget #dockAreaMaximizeButton:hover{
+	border-image: url(:/module/Resources/default/common/module/max-hover.png);
+}
+ads--CDockAreaWidget #dockAreaMaximizeButton:pressed{
+	border-image: url(:/module/Resources/default/common/module/max-press.png);
+}
+
+ads--CDockAreaWidget #dockAreaCloseButton{
+	border-image: url(:/module/Resources/default/common/module/close.png);
+}
+ads--CDockAreaWidget #dockAreaCloseButton:hover{
+	border-image: url(:/module/Resources/default/common/module/close-hover.png);
+}
+ads--CDockAreaWidget #dockAreaCloseButton:pressed{
+	border-image: url(:/module/Resources/default/common/module/close-press.png);
+}
+
+
+/* TitleStyle=Native */
+ads--CDockContainerWidget ads--CDockSplitter::handle {
+	background: transparent;
+    width: 8px;
+    height: 8px;
+}
+
+ads--CDockAreaWidget {
+	background:transparent;
+	border: 1px solid #b7cade;
+}
+
+ads--CDockAreaTitleBar[TitleStyle="Native"]{
+    background: #d1e0ef;
+    min-height: 25px;
+	border-color:#b7cade;
+	border-style:solid;
+	border-width:0 0 1 0;
+}
+
+ads--CDockAreaTabBar{
+	background: transparent;
+}
+
+ads--CDockAreaTabBar #tabsContainerWidget{
+    background: transparent;
+}
+
+ads--CDockWidgetTab {
+	background: transparent;
+}
+
+ads--CDockWidgetTab[activeTab="true"] {
+	background: #d1e0ef;
+}
+
+ads--CDockWidgetTab QLabel {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    background: transparent;
+	color: #35405c;
+}
+
+ads--CDockWidgetTab[activeTab="true"] QLabel {
+	color: #003d74;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------*/
+
+
+/* TitleStyle=Tradition */
+ads--CDockAreaTitleBar[TitleStyle="Tradition"]{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #FBFCFF, stop:1 #E2E9F2);
+	border-top:0px;
+	border-bottom:1px solid #FBFCFF;
+	border-left:1px solid #FBFCFF;
+	border-right:1px solid #FBFCFF;
+}
+
+ads--CDockAreaTabBar[TitleStyle="Tradition"] ads--CDockWidgetTab{
+	color: #595757;
+	background: transparent;
+	margin:3px 3px 3px 3px;
+}
+ads--CDockAreaTabBar[TitleStyle="Tradition"] ads--CDockWidgetTab[activeTab="true"]{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #ABBED2, stop:1 #D8DFE7);
+	margin-right:6px;
+	margin-left:6px;
+}
+ads--CDockAreaTitleBar[TitleStyle="Tradition"] ads--CDockWidgetTab[activeTab="true"] QLabel {
+	color: #036EAB;
+    font-weight: normal;
+}
+
+ads--CDockAreaWidget[TitleStyle="Tradition"] #DockTraditionBar{
+	background-color: #d1e0ef;
+	border-bottom:1px solid #b7cade;
+	margin-top:-1px;
+} 
+
+ads--CDockAreaWidget[TitleStyle="Tradition"] #DockTraditionBarLab{
+	margin-left: 3px;
+	font-size:14px;
+	color:#003D74;
+	font-weight:bold;	
+}
+
+ads--CDockAreaWidget[TitleStyle="Tradition"] #DockTraditionBarBtn{
+	background: transparent;
+	image: url(:/module/Resources/default/common/module/close.png);
+}
+ads--CDockAreaWidget[TitleStyle="Tradition"] #DockTraditionBarBtn:hover{
+	image: url(:/module/Resources/default/common/module/close-hover.png);
+}
+ads--CDockAreaWidget[TitleStyle="Tradition"] #DockTraditionBarBtn:pressed{
+	image: url(:/module/Resources/default/common/module/close-press.png);
+}
+ads--DockTraditionContainer ads--CDockWidgetTab{
+	font-size:14px;
+	color:#003D74;
+	font-weight:bold;	
+}
+/*------------------------------------------------------------------*/
+
+
+/* TitleStyle=Workarea */
+ads--CDockAreaWidget[TitleStyle="Workarea"] {
+	background:#e7eef6;
+	border:0px solid #b7cade;
+}
+
+ads--CDockAreaTitleBar[TitleStyle="Workarea"]{
+	min-height:24px;
+    background: #e7eef6;
+	border-bottom: 1px solid #b7cade;
+}
+ads--CDockAreaTabBar[TitleStyle="Workarea"]{
+	background: transparent;
+}
+
+ads--CDockWidget[AreaFlag="4"] {
+	background-color: #FBFCFF;
+	border-color: #b7cade;
+	border-style: solid;
+	border-width: 0 1 1 1;
+	padding:0px;
+}
+ads--CDockWidget[AreaFlag="4"] BasicWorkareaContentWidget{
+	border: 1px solid #ffffff;
+}
+
+ads--CDockAreaTabBar[TitleStyle="Workarea"] ads--CDockWidgetTab{
+	max-height: 23px;
+	padding-top:2px;
+	border:1px solid #b7cade;
+	background:#e7eef6;
+}
+ads--CDockAreaTabBar[TitleStyle="Workarea"] ads--CDockWidgetTab[activeTab="true"]{
+	padding-top:0px;
+	border-top:3px solid #003d74;
+	border-bottom: 1px solid white;
+	background: #ffffff;
+}
+ads--CDockAreaWidget[TitleStyle="Workarea"] #dockAreaCloseButton{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close.png);
+}
+ads--CDockAreaWidget[TitleStyle="Workarea"] #dockAreaCloseButton:hover{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close-hover.png);
+}
+ads--CDockAreaWidget[TitleStyle="Workarea"] #dockAreaCloseButton:pressed{
+	border-image: url(:/CoreUi/Resources/default/common/workArea/close-press.png);
+}
+/*------------------------------------------------------------------------*/
+
+ads--CDockWidget {
+	background: transparent;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+}
+ads--CDockWidget#logView{
+	padding:0px;
+}
+
+ads--CDockWidget{
+	padding:8px;
+	background-color: #FBFCFF;
+}
+
+ads--CDockWidget >QWidget{
+	border: 1px solid #cecece;
+}
+
+ads--CDockWidget[WorkArea="true"] #dockWidgetScrollArea{
+	margin:0;
+}
+
+ads--CTitleBarButton {
+	padding: 0px 0px;
+}
+
+QScrollArea#dockWidgetScrollArea {
+	padding: 0px;
+	border: none;
+}
+
+#tabCloseButton {
+    max-width: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+	margin-top: 2px;
+	background: transparent;
+	border: none;
+	qproperty-icon: url(:/CoreUi/Resources/default/common/workArea/close.png),
+		url(:/ads/images/close-button-disabled.svg) disabled;
+	qproperty-iconSize: 16px;
+}
+
+#tabCloseButton:hover {
+    image:url(:/CoreUi/Resources/default/common/workArea/close-hover.png);
+}
+
+#tabCloseButton:pressed {
+	image:url(:/CoreUi/Resources/default/common/workArea/close-press.png);
+}
+
+#tabsMenuButton::menu-indicator {
+	image: none;
+}
+
+#tabsMenuButton {
+	qproperty-icon: url(:/ads/images/tabs-menu-button.svg);
+	qproperty-iconSize: 16px;
+}
+
+#dockAreaCloseButton {
+	qproperty-icon: "";
+}
+
+
+#detachGroupButton {
+	qproperty-icon: url(:/ads/images/detach-button.svg),
+		url(:/ads/images/detach-button-disabled.svg) disabled;
+	qproperty-iconSize: 16px;	
+}

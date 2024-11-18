@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlanBrowser</class>
+ <widget class="QWidget" name="PlanBrowser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1087</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="maximumSize">
+      <size>
+       <width>350</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="horizontalGroupBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>过滤</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="check_me">
+           <property name="text">
+            <string>和我相关的</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+    background-color:#FFFFFF;
+    font: 75 18px &quot;WenQuanYi Micro Hei Mono&quot;;
+    color: black;
+}
+
+QTableView{
+    color: rgb(0, 0, 0);
+    background:white;
+    gridline-color:rgb(161,161,161);
+    alternate-background-color:rgb(244, 244, 244);
+    selection-color:white;
+    selection-background-color:rgb(23, 166, 255);
+}
+QListView{
+    color: rgb(0, 0, 0);
+    border:0px solid grey;
+    background:white;
+    gridline-color:rgb(161,161,161);
+    alternate-background-color:rgb(244, 244, 244);
+    selection-color:white;
+    selection-background-color:rgb(23, 166, 255);
+}
+QScrollBar:vertical
+{
+    width:50px;
+    border:1px solid grey;
+    background:rgb(255,255,255);
+    padding-top:40px;
+    padding-bottom:40px;
+    margin:0px,0px,0px,0px;
+}
+QScrollBar::handle:vertical
+{
+    background:#FFFFFF;
+        border:1px solid grey;
+    border-radius:5px;
+    min-height:80;
+}
+QScrollBar::handle:vertical:hover
+{
+    background:#D4DCDE;
+    border:1px solid grey;
+    border-radius:5px;
+    min-height:80;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    background:none;
+}
+QScrollBar::add-line:vertical
+{
+     border: 1px solid grey;
+     background: rgb(245,245,245);
+     height: 40px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+     image: url(:/image/image/aio/icon_slide_down.png);
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: 1px solid grey;
+    background: rgb(245,245,245);
+    height: 40px;
+    subcontrol-position: top;
+    image: url(:/image/image/aio/icon_slide_up.png);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page_plan_filter">
+      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frm_plan_execute">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>计划执行进度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableView" name="tab_plan_status"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>筛选意见</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="lab_note">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(240, 240, 240);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="edit_note">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>80</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#edit_note{
+background-color: rgb(255, 255, 255);
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lab_msg">
+           <property name="styleSheet">
+            <string notr="true">#lab_msg[success=true]{
+    background-color:rgba(255,255,255,0);
+    color:#00cc00;
+    border-width:0px;
+}
+
+#lab_msg[success=false]{
+    background-color:rgba(255,255,255,0);
+    color:#cc0000;
+    border-width:0px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btn_pass">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>通过</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_no_pass">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>提交意见</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="ResumePreviewer" name="frm_resume_preview" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_plan_invite">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>250</y>
+         <width>241</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>邀约计划，施工中.....</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ResumePreviewer</class>
+   <extends>QWidget</extends>
+   <header location="global">HRMTool/resumepreviewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

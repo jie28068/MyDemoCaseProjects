@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message PortContextSerialize{
+	string source_uuid = 1;
+	string type = 2;
+	string name = 3;
+	string uuid = 4;
+	bytes size = 5;
+	bytes pos = 6;
+	bool is_absolute_pos = 7;
+	bool support_multip_connectorwire = 8;
+	uint32  anchor_point = 9;
+	bool is_show_name = 10;
+	string display_name = 11;
+	bytes extra_info_map = 12;
+	int32 angle = 13;
+	string original_port_uuid = 14;
+}

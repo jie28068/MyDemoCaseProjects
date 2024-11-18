@@ -1,0 +1,6 @@
+^D:\QT5BOOK\QT5.15SAMPLES2023\CHAP01INTRODUCTION\SAMP1_2MSVC\SAMP1_2\SAMP1_2.H
+"D:\Qt\Qt5.12.1\5.12.1\msvc2015_64\bin\moc.exe"  "D:\Qt5Book\QT5.15Samples2023\chap01Introduction\samp1_2MSVC\samp1_2\samp1_2.h" -o ".\GeneratedFiles\Release\moc_samp1_2.cpp"  -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64  "-I.\GeneratedFiles" "-I." "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include" "-I.\GeneratedFiles\Release\." "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include\QtCore" "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include\QtGui" "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include\QtMultimedia" "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include\QtMultimediaWidgets" "-ID:\Qt\Qt5.12.1\5.12.1\msvc2015_64\include\QtWidgets"
+^D:\QT5BOOK\QT5.15SAMPLES2023\CHAP01INTRODUCTION\SAMP1_2MSVC\SAMP1_2\SAMP1_2.UI
+"D:\Qt\Qt5.12.1\5.12.1\msvc2015_64\bin\uic.exe" -o ".\GeneratedFiles\ui_samp1_2.h" "D:\Qt5Book\QT5.15Samples2023\chap01Introduction\samp1_2MSVC\samp1_2\samp1_2.ui"
+^D:\QT5BOOK\QT5.15SAMPLES2023\CHAP01INTRODUCTION\SAMP1_2MSVC\SAMP1_2\SAMP1_2.QRC
+"D:\Qt\Qt5.12.1\5.12.1\msvc2015_64\bin\rcc.exe" -name "samp1_2" -no-compress "D:\Qt5Book\QT5.15Samples2023\chap01Introduction\samp1_2MSVC\samp1_2\samp1_2.qrc" -o .\GeneratedFiles\qrc_samp1_2.cpp

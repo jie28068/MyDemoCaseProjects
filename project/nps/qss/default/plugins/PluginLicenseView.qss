@@ -1,0 +1,214 @@
+﻿/*QTabWidget*/
+QTabWidget#license_tab_widget QTabBar
+{
+	qproperty-drawBase: 0;
+}
+QTabWidget#license_tab_widget QTabBar::tab{
+	min-width: 137px;
+	min-height: 37px;
+	font-family: "Microsoft YaHei";
+	color: #717071;
+	font-size:14px;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fefefe, stop:1 #f1f1f1);
+	border-top:1px solid #bfbfbf;
+	border-right:1px solid #bfbfbf;
+	border-bottom:1px solid #bfbfbf;
+}
+QTabWidget#license_tab_widget QTabBar::tab:first
+{
+	border-left:1px solid #bfbfbf;
+}
+
+QTabWidget#license_tab_widget QTabBar::tab:selected{
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom-color:transparent;
+}
+QTabWidget#license_tab_widget QTabBar::tab:hover:!selected{
+	background: rgb(200,200,200);
+}
+
+/*QTableWidget*/
+
+LicenseFeatureTreeView{
+	color:#717071;
+	font-size:14px;
+	border: 1px solid #c5c5c5;
+	selection-background-color:#d1e0ef;
+	selection-color:#717071;
+	background-color: #ffffff;
+	show-decoration-selected:1;
+	margin-left: 1px;
+
+	/*
+	qproperty-gridColor: rgb(190, 190, 190, 255);
+	qproperty-showVerticalGrid: true;
+	qproperty-showHorizontalGrid: true;
+	*/
+}
+
+LicenseFeatureTreeView QHeaderView{
+	min-height: 30px;	
+}
+LicenseFeatureTreeView QHeaderView::section {
+	font-family:"Microsoft YaHei";
+	font-size:14px;
+	color:#000000;
+	background-color:#eaeff7; 
+	border-top:none;
+	border-left:none;
+	border-right: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+/*QGroupBox*/
+QGroupBox#gb_userinfo, QGroupBox#gb_licenseinfo, QGroupBox#gb_feature {
+	color:#036eb7;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+    border-top: 2px solid #036eab; /* top line */
+    margin-top: 24px; /* leave space at the top for the title */
+}
+QGroupBox#gb_userinfo::title, QGroupBox#gb_licenseinfo::title, QGroupBox#gb_feature::title{
+    subcontrol-origin: margin;   
+    subcontrol-position: top left; /* position at the top top left */	
+}
+
+/*QScrollArea*/
+QScrollArea#single_license_view_scroll_area{
+	/* border:1px solid #cacaca; */
+	background: #ffffff;
+}
+
+QScrollArea#single_license_view_scroll_area QWidget#single_license_scroll_area_central{
+	background-color: #ffffff;
+	border: 1px solid #cacaca; 
+}
+
+QProgressBar#license_load_progress_bar, QProgressBar#progress_file {
+	border: none;
+	min-height: 20px;
+	max-height: 20px;
+	background:#cacaca;
+}
+
+QProgressBar#license_load_progress_bar::chunk, QProgressBar#progress_file::chunk {
+	border: none;
+	background: #0dac67;
+}
+
+QLabel#lb_productName {
+	color:#036eb7;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+}
+
+CheckSumLabel {
+	border: 1px solid #c1c1c1
+}
+
+QFrame#request_view {
+	border: 1px solid #c1c1c1
+}
+
+#LicenseInstallView, #LicenseRequestView {
+	background:#FBFCFF;
+	border-left : 1px solid #B7CADE;
+	border-right: 1px solid #B7CADE;
+}
+
+#DrawerGroupButton,#DrawerGroupList,#DrawerWidgetCentral {
+	background:transparent;
+	border:none;
+}
+
+#DrawerGroupList:focus {
+	outline: 0px;
+}
+
+#DrawerGroupList::item:hover {
+	background:transparent;
+}
+
+#DrawerGroupList::item:selected{
+	background:#D1E0EF;
+}
+
+#LicenseManageLine1{
+	border-top : 1px solid #B7CADE;
+}
+
+#LicenseManageLine2{
+	border-left : 1px solid #B7CADE;
+}
+
+DrawerWidget {
+	background:transparent;
+	border:1px solid #B7CADE;
+}
+
+LicenseLoaderDrawerWidget {
+	background:transparent;
+}
+
+#LicenseManagerCentralView {
+	background: #FBFCFF;
+	border:1px solid #B7CADE;
+}
+
+QLabel#LicenseManagerCentralTitle{
+	color:#036eb7;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+}
+
+/* 加载中...*/
+QLabel#LicenseManagerItemTip[Style=Info] {
+	border-radius: 8px;
+	border: 1px solid rgb(255,255,255);
+	background-color: rgb(255,255,255);
+	color: #000000;
+	font-size: 12px;
+}
+/* 已授权 */
+QLabel#LicenseManagerItemTip[Style=Ok] {
+	border-radius: 8px;
+	border: 1px solid rgb(0,198,80);
+	background-color: rgb(0,198,80);
+	color: #FFFFFF;
+	font-size: 12px;
+}
+/* 已过期 */
+QLabel#LicenseManagerItemTip[Style=Error] {
+	border-radius: 8px;
+	border: 1px solid rgb(241,197,20);
+	background-color: rgb(146,146,146);
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+/* 未授权 */
+QLabel#LicenseManagerItemTip[Style=Fatal] {
+	border-radius: 8px;
+	border: 1px solid rgb(204,204,204);
+	background-color: rgb(204,204,204);
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+/* 无法加载 */
+QLabel#LicenseManagerItemTip[Style=Offline] {
+	border-radius: 8px;
+	border: 1px solid rgb(255,255,255);
+	background-color: rgb(255,255,255);
+	color: #FF0000;
+	font-size: 11px;
+}
+
+#LicenseInstallButtonGroup, #LicenseRequestButtonGroup, #LicenseManagerButtonGroup{
+	border: 1px solid #B7CADE;
+	background:#FBFCFF;	
+}

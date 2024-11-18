@@ -1,0 +1,22 @@
+bin
+lib
+*.npsmodel.json
+*.tkmodel.json
+*.pot
+*.po~
+
+# VS常见的临时文件
+*.suo
+*.user
+*.sdf
+*.exp
+*.ilk
+*.pdb
+*.obj
+*.tlog
+*.intermediate.manifest
+*.opensdf
+*.log
+*.ipch
+*.vspscc
+*.aps

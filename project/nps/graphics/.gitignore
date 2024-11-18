@@ -1,0 +1,21 @@
+# 忽略子目录指定的文件或文件夹
+GeneratedFiles/
+Temp/
+ipch/
+Debug/
+Release/
+*.suo
+*.user
+*.sdf
+*.exp
+*.ilk
+*.pdb
+*.obj
+*.tlog
+*.intermediate.manifest
+*.opensdf
+*.log
+*.ipch
+*.vspscc
+*.aps
+GraphicsModelingKernel/Serialize/*

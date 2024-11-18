@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+import "SourceProxy.proto";
+import "ConnectorWireContext.proto";
+import "PortContext.proto";
+
+
+message CanvasContextSerialize{
+	string name = 1;
+	string uuid = 2;
+	bytes size = 3;
+	uint32 direction = 4;
+	bytes background_color = 5;
+	
+	double scale = 6;
+	uint32 type = 7;
+	string description = 8;
+	bytes center_pos = 9;
+	string version = 10;
+	int32 grid_space = 11;
+	uint32 grid_flag = 12;
+	uint32 layer_flag = 13;
+	map<string,SourceProxySerialize> source_map = 14;
+	map<string,ConnectorWireContextSerialize> connector_wire_map = 15;
+	repeated PortContextSerialize port_list = 16;
+	string connector_wire_algorithm_name = 17;
+	bool show_arrow = 18;
+	bool show_connector_wire_switch = 19;
+	bytes extre_info_map = 20;
+	bool show_connector_wire_branch_point = 21;
+	bool allow_overlap = 22;
+	bool highlight_homologous_connectorwire = 23;
+	bool read_only = 24;
+	bytes layer_property_map = 25;
+	bool show_navigation_preview = 26;
+
+	bool locked = 27;
+	string author = 28;
+	string last_modify_time = 29;
+	uint32 lineStyle = 30; 
+	bytes line_color = 31;
+	bytes line_select_color = 32;
+	bytes canvas_property = 33;
+	bool show_model_running_sort = 34;
+	bytes scene_rectf = 35;
+	bool subsystem_initialized = 36;
+	bool is_support_suspended_connector_wire = 37;
+}

@@ -1,0 +1,227 @@
+/*==============二级弹窗显示区域================*/
+KBaseDlgBox #contentWidget{
+	background: #FBFCFF;
+}
+KBaseDlgBox KCentralWidget[Style=Normal]{
+	background: white;
+	border-left: 1px solid #B7CADE;
+	border-right: 1px solid #B7CADE;
+	border-bottom: 1px solid #B7CADE;
+}
+KBaseDlgBox KCentralWidget #containerWidget{
+	background:white;
+	border: 1px solid #BFBFBF;
+}
+KBaseDlgBox KCentralWidget #containerWidget[BorderVisible=false]{
+	background:white;
+	border: none;
+}
+KBaseDlgBox KCentralWidget[Style=Normal] > QDialog{
+	background:white;
+}
+KBaseDlgBox KCentralWidget[Style=Normal] > QScrollArea{
+	background:white;
+}
+KBaseDlgBox KCentralWidget[Style=FullScreenContainsTitle]{
+	border-left: 1px solid #B7CADE;
+	border-right: 1px solid #B7CADE;
+	border-bottom: 1px solid #B7CADE;
+}
+KBaseDlgBox KCentralWidget[Style=FullScreen]{
+	border: none;
+}
+KBaseDlgBox KCentralWidget[Style=hiddenButtonGroup]{
+	border-top: 1px solid #003D74;
+	border-left: 1px solid #B7CADE;
+	border-right: 1px solid #B7CADE;
+	border-bottom:1px solid #b7cade;
+	background:#FBFCFF;	
+}
+
+KBaseDlgBox KCentralWidget QGroupBox{
+	color:#036eab;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+	font-weight:bold;
+}
+
+KBaseDlgBox KCentralWidget[Style=Normal] > QLineEdit {
+	border:1px solid #BFBFBF;
+	background:#FFFFFF;
+	padding-left:10px;
+	padding-right:10px;
+	min-height:25px;
+	max-height:25px;
+}
+
+KBaseDlgBox KCentralWidget[Style=Normal] > QLineEdit:!enabled {
+	background-color:#e2e2e2;
+	border:1px solid #bfbfbf;
+}
+
+KBaseDlgBox KCentralWidget[Style=Normal] > QLineEdit:hover{
+    border: 1px solid #838acb;
+}
+KBaseDlgBox KCentralWidget[Style=Normal] > QLineEdit:focus{
+	border:1px solid #2ca6e0;
+	background:#ffffff;
+}
+
+KColorDialog KCentralWidget[Style=Normal] > QWidget {
+	border:none;
+}
+
+/*==============二级弹窗显示区域LineEdit禁用样式=============*/
+KBaseDlgBox .QLineEdit:!enabled{
+	background-color:#E2E2E2;
+	border:1px solid #bfbfbf;
+}
+
+/*==============二级弹窗按钮组样�?===============*/
+.KButtonGroup{
+	background:transparent;	
+}
+.KButtonGroup QPushButton[KButtonGroupButtonStyle=style]{
+	min-width:60px;
+	background-color:#036EB7;
+}
+.KButtonGroup QPushButton[KButtonGroupButtonStyle=style]:hover{
+	min-width:60px;
+	background-color:#025696;
+}
+.KButtonGroup QPushButton[KButtonGroupButtonStyle=style]:pressed{
+	min-width:60px;
+	background-color:#003D74;
+	color:white;
+}
+.KButtonGroup QPushButton[KButtonGroupButtonStyle=style]:disabled{
+	min-width:60px;
+	background-color:#CACACA;
+}
+/*=============二级弹窗标题组样�?==============*/
+.KTitleBar{
+	background:#003D74;
+	min-height:29px;
+	max-height:29px;
+}
+.KTitleBar QLabel{
+	font-size:14px;
+	color:#ffffff;
+	font-weight: bold;
+	font-family:"Microsoft YaHei";
+}
+
+KTitleBar[Max=true]{
+	border:none;
+}
+KTitleBar[Max=false]{
+	border-top:1px solid #bfbfbf;
+	border-left:1px solid #bfbfbf;
+	border-right:1px solid #bfbfbf;
+}
+
+KBaseDlgBox#KBaseDlgBoxName{
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+KTitleBar QToolButton#toolButton_close{
+	min-height:16px;
+	max-height:16px;
+	min-width:16px;
+	max-width:16px;
+	border-image: url(:/KLWidgets/Resources/close.png);
+}
+KTitleBar QToolButton#toolButton_close:hover{
+	border-image: url(:/KLWidgets/Resources/close-hover.png);
+}
+KTitleBar QToolButton#toolButton_close:pressed{
+	border-image: url(:/KLWidgets/Resources/close-press.png);
+}
+KTitleBar QToolButton#toolButton_close:disabled{
+	border-image: url(:/KLWidgets/Resources/close-disabled.png);
+}
+
+KTitleBar QToolButton#toolButton_min{
+	min-height:16px;
+	max-height:16px;
+	min-width:16px;
+	max-width:16px;
+	border-image: url(:/KLWidgets/Resources/mini.png);
+}
+KTitleBar QToolButton#toolButton_min:hover{
+	border-image: url(:/KLWidgets/Resources/mini-hover.png);
+}
+KTitleBar QToolButton#toolButton_min:pressed{
+	border-image: url(:/KLWidgets/Resources/mini-press.png);
+}
+KTitleBar QToolButton#toolButton_min:disabled{
+	border-image: url(:/KLWidgets/Resources/mini-disabled.png);
+}
+
+KTitleBar QToolButton[KLTitle_maxSize=true]{
+	min-height:16px;
+	max-height:16px;
+	min-width:16px;
+	max-width:16px;
+	border-image: url(:/KLWidgets/Resources/max.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=true]:hover{
+	border-image: url(:/KLWidgets/Resources/max-hover.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=true]:pressed{
+	border-image: url(:/KLWidgets/Resources/max-press.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=true]:disabled{
+	border-image: url(:/KLWidgets/Resources/max-disabled.png);
+}
+
+KTitleBar QToolButton[KLTitle_maxSize=false]{
+	min-height:16px;
+	max-height:16px;
+	min-width:16px;
+	max-width:16px;
+	border-image: url(:/KLWidgets/Resources/restore.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=false]:hover{
+	border-image: url(:/KLWidgets/Resources/restore-hover.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=false]:pressed{
+	border-image: url(:/KLWidgets/Resources/restore-press.png);
+}
+KTitleBar QToolButton[KLTitle_maxSize=false]:disabled{
+	border-image: url(:/KLWidgets/Resources/restore-disabled.png);
+}
+
+KLabel[expand_triangleLbe=false]{
+	background-color: transparent; 
+    background-repeat:no-repeat;
+    background-position:center;
+	background-image: url(:/KLWidgets/Resources/toolpage_triangle.png);
+}
+KLabel[expand_triangleLbe=true]{
+	background-color: transparent; 
+    background-repeat:no-repeat;
+    background-position:center;
+	background-image: url(:/KLWidgets/Resources/toolpage_triangle-expand.png);
+}
+KLabel[expand_iconLbe=false]{
+	background-image: none;
+}
+KLabel[expand_iconLbe=true]{
+	border-image: url(:/KLWidgets/Resources/toopage_icon.png);
+}
+
+KLabel[expand_textLbe=false]{
+	font-weight:none;
+}
+KLabel[expand_textLbe=true]{
+	font-weight:none;
+	color: #0177D7;
+}
+
+
+
+
